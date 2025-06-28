@@ -1,0 +1,28 @@
+[safe]
+	directory = /home/tim/D-Schijf/OneDrive/Coding/C++/Database
+	directory = /home/tim/D-Schijf/OneDrive/Coding/C++/Puppeteer
+	directory = /home/tim/D-Schijf/OneDrive/Coding/Websites/InfoLab
+	directory = /home/tim/.cache/yay/spicetify-cli
+	directory = /home/tim/.cache/yay/android-studio
+	directory = /home/tim/.cache/yay/oh-my-zsh-git
+	directory = /home/tim/.cache/yay/spotify
+	directory = /home/tim/.cache/yay/
+	directory = /home/tim/.cache/yay/
+	directory = /home/tim/.cache/yay/go-sqlcmd
+	directory = /home/tim/
+	directory = /home/tim/D-Schijf/OneDrive/Coding/Python/Hedgehog
+	directory = /home/tim/dotfiles/.config/nvim
+	directory = /home/tim/D-Schijf/Coding/Scripts/ArchConfig
+[user]
+	name = Tim van Naarden
+	email = TimvNaarden@outlook.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
