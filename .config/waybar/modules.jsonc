@@ -21,14 +21,14 @@
         "interval": 10,
         "format": "󰍛 {usage}%",
         "max-length": 10,
-        "on-click": "kitty --start-as fullscreen --title ytop sh -c 'ytop'"
+        "on-click": "kitty --start-as fullscreen --title btop sh -c 'btop'"
     },
 
     "temperature": {
         "interval": 10,
         "format": " {}°C",
         "max-length": 10,
-        "on-click": "kitty --start-as fullscreen --title ytop sh -c 'ytop'"
+        "on-click": "kitty --start-as fullscreen --title btop sh -c 'btop'"
     },
 
     "memory": {
@@ -37,7 +37,7 @@
         "max-length": 10,
         "tooltip": true,
         "tooltip-format": "Memory - {used:0.1f}GB used",
-        "on-click": "kitty --start-as=fullscreen --title ytop sh -c 'ytop'"
+        "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
     },
 
     "wlr/workspaces": {
