@@ -11,3 +11,13 @@ lspconfig.clangd.setup {
   end,
   capabilities = capabilities,
 }
+
+
+local servers = { "ts_ls", "tailwindcss", "eslint", "lua_ls" }
+
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
