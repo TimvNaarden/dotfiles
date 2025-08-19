@@ -13,6 +13,9 @@
 	directory = /home/tim/D-Schijf/OneDrive/Coding/Python/Hedgehog
 	directory = /home/tim/dotfiles/.config/nvim
 	directory = /home/tim/D-Schijf/Coding/Scripts/ArchConfig
+	directory = /home/tim/D-Schijf/Coding/Websites/Infolan
+	directory = /home/tim/D-Schijf/Coding/Websites/Infolab
+	directory = /home/tim/D-Schijf/Coding/Websites/InfoLab
 [user]
 	name = Tim van Naarden
 	email = TimvNaarden@outlook.com

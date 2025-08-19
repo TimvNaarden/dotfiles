@@ -1,8 +1,8 @@
 profile docked {
 	output eDP-1 disable
-	output DP-2 mode 2560x1440@155 position 0,0
-	output DP-3 mode 2560x1440@60 position 2560,0
-	output DP-4 mode 2560x1440@60 position 5120,0
+	output DP-4 mode 2560x1440@155 position 0,0
+	output DP-2 mode 2560x1440@60 position 2560,0
+	output DP-3 mode 2560x1440@60 position 5120,0
 }
 
 profile laptop {
