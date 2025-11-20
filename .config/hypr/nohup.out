@@ -1,0 +1,1469 @@
+[2025-08-28 12:06:37.962] [info] Using configuration file /home/tim/.config/waybar/config.jsonc
+[2025-08-28 12:06:37.962] [info] Including resource file: ~/.config/waybar/modules.jsonc
+[2025-08-28 12:06:37.965] [info] Using CSS file /home/tim/.config/waybar/style.css
+[2025-08-28 12:06:37.972] [info] Hyprland IPC starting
+[2025-08-28 12:06:37.972] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-28 12:06:37.974] [warning] 'swap-icon-label' must be a bool.
+[2025-08-28 12:06:38.020] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-28 12:06:38.049] [warning] 'swap-icon-label' must be a bool.
+[2025-08-28 12:06:38.170] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-08-28 12:06:38.202] [warning] 'swap-icon-label' must be a bool.
+
+** (waybar:130932): WARNING **: 12:06:38.929: Status Notifier Item with bus name ':1.9' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2025-08-28 12:06:39.091] [info] Bar configured (width: 2540, height: 35) for output: DP-2
+[2025-08-28 12:06:39.092] [info] Bar configured (width: 2540, height: 35) for output: DP-3
+[2025-08-28 12:06:39.092] [info] Bar configured (width: 2540, height: 35) for output: DP-4
+[DEBUG] Loaded saved volume: 88%
+[DEBUG] Starting Spotify volume watcher...
+Got SIGINT, exiting.
+[DEBUG] Loaded saved volume: 88%
+[DEBUG] Starting Spotify volume watcher...
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 122%
+[DEBUG] Saved new volume: 122%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #154
+[DEBUG] Event: Event 'change' on sink-input #154
+[DEBUG] Event: Event 'change' on sink-input #154
+[DEBUG] Event: Event 'change' on sink-input #154
+[DEBUG] Event: Event 'remove' on sink-input #154
+[DEBUG] Event: Event 'new' on sink-input #155
+[DEBUG] Event: Event 'change' on sink-input #155
+[DEBUG] Event: Event 'change' on sink-input #155
+[DEBUG] Event: Event 'change' on sink-input #155
+[DEBUG] Event: Event 'change' on sink-input #155
+[DEBUG] Event: Event 'change' on sink-input #155
+[DEBUG] Event: Event 'remove' on sink-input #155
+[DEBUG] Event: Event 'new' on sink-input #156
+[DEBUG] Event: Event 'change' on sink-input #156
+[DEBUG] Event: Event 'change' on sink-input #156
+[DEBUG] Event: Event 'change' on sink-input #156
+[DEBUG] Event: Event 'change' on sink-input #156
+[DEBUG] Event: Event 'remove' on sink-input #156
+[DEBUG] Event: Event 'new' on sink-input #157
+[DEBUG] Event: Event 'change' on sink-input #157
+[DEBUG] Event: Event 'change' on sink-input #157
+[DEBUG] Event: Event 'change' on sink-input #157
+[DEBUG] Event: Event 'remove' on sink-input #157
+[DEBUG] Event: Event 'new' on sink-input #158
+[DEBUG] Event: Event 'change' on sink-input #158
+[DEBUG] Event: Event 'change' on sink-input #158
+[DEBUG] Event: Event 'change' on sink-input #158
+[DEBUG] Event: Event 'remove' on sink-input #158
+[DEBUG] Event: Event 'new' on sink-input #159
+[DEBUG] Event: Event 'change' on sink-input #159
+[DEBUG] Event: Event 'change' on sink-input #159
+[DEBUG] Event: Event 'change' on sink-input #159
+[DEBUG] Event: Event 'remove' on sink-input #159
+[DEBUG] Event: Event 'new' on sink-input #160
+[DEBUG] Event: Event 'change' on sink-input #160
+[DEBUG] Event: Event 'change' on sink-input #160
+[DEBUG] Event: Event 'change' on sink-input #160
+[DEBUG] Event: Event 'remove' on sink-input #160
+[DEBUG] Event: Event 'new' on sink-input #161
+[DEBUG] Event: Event 'change' on sink-input #161
+[DEBUG] Event: Event 'change' on sink-input #161
+[DEBUG] Event: Event 'change' on sink-input #161
+[DEBUG] Event: Event 'remove' on sink-input #161
+[DEBUG] Event: Event 'new' on sink-input #162
+[DEBUG] Event: Event 'change' on sink-input #162
+[DEBUG] Event: Event 'change' on sink-input #162
+[DEBUG] Event: Event 'change' on sink-input #162
+[DEBUG] Event: Event 'remove' on sink-input #162
+[DEBUG] Event: Event 'new' on sink-input #163
+[DEBUG] Event: Event 'change' on sink-input #163
+[DEBUG] Event: Event 'change' on sink-input #163
+[DEBUG] Event: Event 'change' on sink-input #163
+[DEBUG] Event: Event 'remove' on sink-input #163
+[DEBUG] Event: Event 'new' on sink-input #164
+[DEBUG] Event: Event 'change' on sink-input #164
+[DEBUG] Event: Event 'change' on sink-input #164
+[DEBUG] Event: Event 'change' on sink-input #164
+[DEBUG] Event: Event 'remove' on sink-input #164
+[DEBUG] Event: Event 'new' on sink-input #165
+[DEBUG] Event: Event 'change' on sink-input #165
+[DEBUG] Event: Event 'change' on sink-input #165
+[DEBUG] Event: Event 'change' on sink-input #165
+[DEBUG] Event: Event 'remove' on sink-input #165
+[DEBUG] Event: Event 'new' on sink-input #166
+[DEBUG] Event: Event 'change' on sink-input #166
+[DEBUG] Event: Event 'change' on sink-input #166
+[DEBUG] Event: Event 'change' on sink-input #166
+[DEBUG] Event: Event 'remove' on sink-input #166
+[DEBUG] Event: Event 'new' on sink-input #167
+[DEBUG] Event: Event 'change' on sink-input #167
+[DEBUG] Event: Event 'change' on sink-input #167
+[DEBUG] Event: Event 'change' on sink-input #167
+[DEBUG] Event: Event 'remove' on sink-input #167
+[DEBUG] Event: Event 'new' on sink-input #168
+[DEBUG] Event: Event 'change' on sink-input #168
+[DEBUG] Event: Event 'change' on sink-input #168
+[DEBUG] Event: Event 'change' on sink-input #168
+[DEBUG] Event: Event 'remove' on sink-input #168
+[DEBUG] Event: Event 'new' on sink-input #169
+[DEBUG] Event: Event 'change' on sink-input #169
+[DEBUG] Event: Event 'change' on sink-input #169
+[DEBUG] Event: Event 'change' on sink-input #169
+[DEBUG] Event: Event 'remove' on sink-input #169
+[DEBUG] Event: Event 'new' on sink-input #170
+[DEBUG] Event: Event 'change' on sink-input #170
+[DEBUG] Event: Event 'change' on sink-input #170
+[DEBUG] Event: Event 'change' on sink-input #170
+[DEBUG] Event: Event 'remove' on sink-input #170
+[DEBUG] Event: Event 'new' on sink-input #171
+[DEBUG] Event: Event 'change' on sink-input #171
+[DEBUG] Event: Event 'change' on sink-input #171
+[DEBUG] Event: Event 'change' on sink-input #171
+[DEBUG] Event: Event 'remove' on sink-input #171
+[DEBUG] Event: Event 'new' on sink-input #172
+[DEBUG] Event: Event 'change' on sink-input #172
+[DEBUG] Event: Event 'change' on sink-input #172
+[DEBUG] Event: Event 'change' on sink-input #172
+[DEBUG] Event: Event 'remove' on sink-input #172
+[DEBUG] Event: Event 'new' on sink-input #173
+[DEBUG] Event: Event 'change' on sink-input #173
+[DEBUG] Event: Event 'change' on sink-input #173
+[DEBUG] Event: Event 'change' on sink-input #173
+[DEBUG] Event: Event 'remove' on sink-input #173
+[DEBUG] Event: Event 'new' on sink-input #174
+[DEBUG] Event: Event 'change' on sink-input #174
+[DEBUG] Event: Event 'change' on sink-input #174
+[DEBUG] Event: Event 'change' on sink-input #174
+[DEBUG] Event: Event 'remove' on sink-input #174
+[DEBUG] Event: Event 'new' on sink-input #175
+[DEBUG] Event: Event 'change' on sink-input #175
+[DEBUG] Event: Event 'change' on sink-input #175
+[DEBUG] Event: Event 'change' on sink-input #175
+[DEBUG] Event: Event 'remove' on sink-input #175
+[DEBUG] Event: Event 'new' on sink-input #176
+[DEBUG] Event: Event 'change' on sink-input #176
+[DEBUG] Event: Event 'change' on sink-input #176
+[DEBUG] Event: Event 'change' on sink-input #176
+[DEBUG] Event: Event 'remove' on sink-input #176
+[DEBUG] Event: Event 'new' on sink-input #177
+[DEBUG] Event: Event 'change' on sink-input #177
+[DEBUG] Event: Event 'change' on sink-input #177
+[DEBUG] Event: Event 'change' on sink-input #177
+[DEBUG] Event: Event 'remove' on sink-input #177
+[DEBUG] Event: Event 'new' on sink-input #178
+[DEBUG] Event: Event 'change' on sink-input #178
+[DEBUG] Event: Event 'change' on sink-input #178
+[DEBUG] Event: Event 'change' on sink-input #178
+[DEBUG] Event: Event 'remove' on sink-input #178
+[DEBUG] Event: Event 'new' on sink-input #179
+[DEBUG] Event: Event 'change' on sink-input #179
+[DEBUG] Event: Event 'change' on sink-input #179
+[DEBUG] Event: Event 'change' on sink-input #179
+[DEBUG] Event: Event 'remove' on sink-input #179
+[DEBUG] Event: Event 'new' on sink-input #180
+[DEBUG] Event: Event 'change' on sink-input #180
+[DEBUG] Event: Event 'change' on sink-input #180
+[DEBUG] Event: Event 'change' on sink-input #180
+[DEBUG] Event: Event 'remove' on sink-input #180
+[DEBUG] Event: Event 'new' on sink-input #181
+[DEBUG] Event: Event 'change' on sink-input #181
+[DEBUG] Event: Event 'change' on sink-input #181
+[DEBUG] Event: Event 'change' on sink-input #181
+[DEBUG] Event: Event 'remove' on sink-input #181
+[DEBUG] Event: Event 'new' on sink-input #182
+[DEBUG] Event: Event 'change' on sink-input #182
+[DEBUG] Event: Event 'change' on sink-input #182
+[DEBUG] Event: Event 'change' on sink-input #182
+[DEBUG] Event: Event 'remove' on sink-input #182
+[DEBUG] Event: Event 'new' on sink-input #183
+[DEBUG] Event: Event 'change' on sink-input #183
+[DEBUG] Event: Event 'change' on sink-input #183
+[DEBUG] Event: Event 'change' on sink-input #183
+[DEBUG] Event: Event 'remove' on sink-input #183
+[DEBUG] Event: Event 'new' on sink-input #184
+[DEBUG] Event: Event 'change' on sink-input #184
+[DEBUG] Event: Event 'change' on sink-input #184
+[DEBUG] Event: Event 'change' on sink-input #184
+[DEBUG] Event: Event 'remove' on sink-input #184
+[DEBUG] Event: Event 'new' on sink-input #185
+[DEBUG] Event: Event 'change' on sink-input #185
+[DEBUG] Event: Event 'change' on sink-input #185
+[DEBUG] Event: Event 'change' on sink-input #185
+[DEBUG] Event: Event 'remove' on sink-input #185
+[DEBUG] Event: Event 'new' on sink-input #186
+[DEBUG] Event: Event 'change' on sink-input #186
+[DEBUG] Event: Event 'change' on sink-input #186
+[DEBUG] Event: Event 'change' on sink-input #186
+[DEBUG] Event: Event 'remove' on sink-input #186
+[DEBUG] Event: Event 'new' on sink-input #187
+[DEBUG] Event: Event 'change' on sink-input #187
+[DEBUG] Event: Event 'change' on sink-input #187
+[DEBUG] Event: Event 'change' on sink-input #187
+[DEBUG] Event: Event 'remove' on sink-input #187
+[DEBUG] Event: Event 'new' on sink-input #188
+[DEBUG] Event: Event 'change' on sink-input #188
+[DEBUG] Event: Event 'change' on sink-input #188
+[DEBUG] Event: Event 'change' on sink-input #188
+[DEBUG] Event: Event 'remove' on sink-input #188
+[DEBUG] Event: Event 'new' on sink-input #189
+[DEBUG] Event: Event 'change' on sink-input #189
+[DEBUG] Event: Event 'change' on sink-input #189
+[DEBUG] Event: Event 'change' on sink-input #189
+[DEBUG] Event: Event 'remove' on sink-input #189
+[DEBUG] Event: Event 'new' on sink-input #190
+[DEBUG] Event: Event 'change' on sink-input #190
+[DEBUG] Event: Event 'change' on sink-input #190
+[DEBUG] Event: Event 'change' on sink-input #190
+[DEBUG] Event: Event 'remove' on sink-input #190
+[DEBUG] Event: Event 'new' on sink-input #191
+[DEBUG] Event: Event 'change' on sink-input #191
+[DEBUG] Event: Event 'change' on sink-input #191
+[DEBUG] Event: Event 'change' on sink-input #191
+[DEBUG] Event: Event 'remove' on sink-input #191
+[DEBUG] Event: Event 'new' on sink-input #192
+[DEBUG] Event: Event 'change' on sink-input #192
+[DEBUG] Event: Event 'change' on sink-input #192
+[DEBUG] Event: Event 'change' on sink-input #192
+[DEBUG] Event: Event 'remove' on sink-input #192
+[DEBUG] Event: Event 'new' on sink-input #193
+[DEBUG] Event: Event 'change' on sink-input #193
+[DEBUG] Event: Event 'change' on sink-input #193
+[DEBUG] Event: Event 'change' on sink-input #193
+[DEBUG] Event: Event 'remove' on sink-input #193
+[DEBUG] Event: Event 'new' on sink-input #194
+[DEBUG] Event: Event 'change' on sink-input #194
+[DEBUG] Event: Event 'change' on sink-input #194
+[DEBUG] Event: Event 'change' on sink-input #194
+[DEBUG] Event: Event 'remove' on sink-input #194
+[DEBUG] Event: Event 'new' on sink-input #195
+[DEBUG] Event: Event 'change' on sink-input #195
+[DEBUG] Event: Event 'change' on sink-input #195
+[DEBUG] Event: Event 'change' on sink-input #195
+[DEBUG] Event: Event 'remove' on sink-input #195
+[DEBUG] Event: Event 'new' on sink-input #196
+[DEBUG] Event: Event 'change' on sink-input #196
+[DEBUG] Event: Event 'change' on sink-input #196
+[DEBUG] Event: Event 'new' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #197
+[DEBUG] Event: Event 'remove' on sink-input #197
+[DEBUG] Event: Event 'change' on sink-input #196
+[DEBUG] Event: Event 'remove' on sink-input #196
+[DEBUG] Event: Event 'new' on sink-input #198
+[DEBUG] Event: Event 'change' on sink-input #198
+[DEBUG] Event: Event 'change' on sink-input #198
+[DEBUG] Event: Event 'new' on sink-input #199
+[DEBUG] Event: Event 'change' on sink-input #199
+[DEBUG] Event: Event 'change' on sink-input #199
+[DEBUG] Event: Event 'change' on sink-input #199
+[DEBUG] Event: Event 'change' on sink-input #199
+[DEBUG] Event: Event 'remove' on sink-input #199
+[DEBUG] Event: Event 'change' on sink-input #198
+[DEBUG] Event: Event 'new' on sink-input #200
+[DEBUG] Event: Event 'change' on sink-input #200
+[DEBUG] Event: Event 'change' on sink-input #200
+[DEBUG] Event: Event 'change' on sink-input #200
+[DEBUG] Event: Event 'change' on sink-input #200
+[DEBUG] Event: Event 'remove' on sink-input #200
+[DEBUG] Event: Event 'remove' on sink-input #198
+[DEBUG] Event: Event 'new' on sink-input #201
+[DEBUG] Event: Event 'change' on sink-input #201
+[DEBUG] Event: Event 'change' on sink-input #201
+[DEBUG] Event: Event 'change' on sink-input #201
+[DEBUG] Event: Event 'change' on sink-input #201
+[DEBUG] Event: Event 'remove' on sink-input #201
+[DEBUG] Event: Event 'new' on sink-input #202
+[DEBUG] Event: Event 'remove' on sink-input #202
+[DEBUG] Event: Event 'new' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'new' on sink-input #204
+[DEBUG] Event: Event 'remove' on sink-input #204
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 120%
+[DEBUG] Saved new volume: 120%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 118%
+[DEBUG] Saved new volume: 118%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 116%
+[DEBUG] Saved new volume: 116%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 114%
+[DEBUG] Saved new volume: 114%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 112%
+[DEBUG] Saved new volume: 112%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 110%
+[DEBUG] Saved new volume: 110%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 108%
+[DEBUG] Saved new volume: 108%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 106%
+[DEBUG] Saved new volume: 106%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 104%
+[DEBUG] Saved new volume: 104%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 102%
+[DEBUG] Saved new volume: 102%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 100%
+[DEBUG] Saved new volume: 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 98%
+[DEBUG] Saved new volume: 98%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 96%
+[DEBUG] Saved new volume: 96%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 94%
+[DEBUG] Saved new volume: 94%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 92%
+[DEBUG] Saved new volume: 92%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 90%
+[DEBUG] Saved new volume: 90%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 88%
+[DEBUG] Saved new volume: 88%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 86%
+[DEBUG] Saved new volume: 86%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 84%
+[DEBUG] Saved new volume: 84%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 82%
+[DEBUG] Saved new volume: 82%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 80%
+[DEBUG] Saved new volume: 80%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 78%
+[DEBUG] Saved new volume: 78%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #205
+[DEBUG] Event: Event 'change' on sink-input #205
+[DEBUG] Event: Event 'change' on sink-input #205
+[DEBUG] Event: Event 'change' on sink-input #205
+[DEBUG] Event: Event 'change' on sink-input #205
+[DEBUG] Event: Event 'remove' on sink-input #205
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #206
+[DEBUG] Event: Event 'remove' on sink-input #206
+[DEBUG] Event: Event 'new' on sink-input #207
+[DEBUG] Event: Event 'remove' on sink-input #207
+[DEBUG] Event: Event 'new' on sink-input #208
+[DEBUG] Event: Event 'remove' on sink-input #208
+[DEBUG] Event: Event 'new' on sink-input #209
+[DEBUG] Event: Event 'remove' on sink-input #209
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #210
+[DEBUG] Event: Event 'remove' on sink-input #210
+[DEBUG] Event: Event 'new' on sink-input #211
+[DEBUG] Event: Event 'remove' on sink-input #211
+[DEBUG] Event: Event 'new' on sink-input #212
+[DEBUG] Event: Event 'remove' on sink-input #212
+[DEBUG] Event: Event 'new' on sink-input #213
+[DEBUG] Event: Event 'remove' on sink-input #213
+[DEBUG] Event: Event 'new' on sink-input #214
+[DEBUG] Event: Event 'remove' on sink-input #214
+[DEBUG] Event: Event 'new' on sink-input #215
+[DEBUG] Event: Event 'remove' on sink-input #215
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #203
+[DEBUG] Event: Event 'remove' on sink-input #203
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #216
+[DEBUG] Event: Event 'change' on sink-input #216
+[DEBUG] Event: Event 'change' on sink-input #216
+[DEBUG] Event: Event 'change' on sink-input #216
+[DEBUG] Event: Event 'change' on sink-input #216
+[DEBUG] Event: Event 'remove' on sink-input #216
+[DEBUG] Event: Event 'new' on sink-input #217
+[DEBUG] Event: Event 'change' on sink-input #217
+[DEBUG] Event: Event 'change' on sink-input #217
+[DEBUG] Event: Event 'change' on sink-input #217
+[DEBUG] Event: Event 'remove' on sink-input #217
+[DEBUG] Event: Event 'new' on sink-input #218
+[DEBUG] Event: Event 'change' on sink-input #218
+[DEBUG] Event: Event 'change' on sink-input #218
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 76%
+[DEBUG] Saved new volume: 76%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 74%
+[DEBUG] Saved new volume: 74%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 72%
+[DEBUG] Saved new volume: 72%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 70%
+[DEBUG] Saved new volume: 70%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 68%
+[DEBUG] Saved new volume: 68%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 66%
+[DEBUG] Saved new volume: 66%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 64%
+[DEBUG] Saved new volume: 64%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 62%
+[DEBUG] Saved new volume: 62%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 60%
+[DEBUG] Saved new volume: 60%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 58%
+[DEBUG] Saved new volume: 58%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #218
+[DEBUG] Event: Event 'remove' on sink-input #218
+[DEBUG] Event: Event 'new' on sink-input #219
+[DEBUG] Event: Event 'change' on sink-input #219
+[DEBUG] Event: Event 'change' on sink-input #219
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #219
+[DEBUG] Event: Event 'remove' on sink-input #219
+[DEBUG] Event: Event 'new' on sink-input #220
+[DEBUG] Event: Event 'change' on sink-input #220
+[DEBUG] Event: Event 'change' on sink-input #220
+[DEBUG] Event: Event 'change' on sink-input #220
+[DEBUG] Event: Event 'remove' on sink-input #220
+[DEBUG] Event: Event 'new' on sink-input #221
+[DEBUG] Event: Event 'change' on sink-input #221
+[DEBUG] Event: Event 'change' on sink-input #221
+[DEBUG] Event: Event 'change' on sink-input #221
+[DEBUG] Event: Event 'remove' on sink-input #221
+[DEBUG] Event: Event 'new' on sink-input #222
+[DEBUG] Event: Event 'change' on sink-input #222
+[DEBUG] Event: Event 'change' on sink-input #222
+[DEBUG] Event: Event 'change' on sink-input #222
+[DEBUG] Event: Event 'remove' on sink-input #222
+[DEBUG] Event: Event 'new' on sink-input #223
+[DEBUG] Event: Event 'change' on sink-input #223
+[DEBUG] Event: Event 'change' on sink-input #223
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 60%
+[DEBUG] Saved new volume: 60%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 62%
+[DEBUG] Saved new volume: 62%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 64%
+[DEBUG] Saved new volume: 64%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 66%
+[DEBUG] Saved new volume: 66%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 68%
+[DEBUG] Saved new volume: 68%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 70%
+[DEBUG] Saved new volume: 70%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 72%
+[DEBUG] Saved new volume: 72%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 74%
+[DEBUG] Saved new volume: 74%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 76%
+[DEBUG] Saved new volume: 76%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 78%
+[DEBUG] Saved new volume: 78%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 80%
+[DEBUG] Saved new volume: 80%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 82%
+[DEBUG] Saved new volume: 82%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 84%
+[DEBUG] Saved new volume: 84%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 86%
+[DEBUG] Saved new volume: 86%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 88%
+[DEBUG] Saved new volume: 88%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 90%
+[DEBUG] Saved new volume: 90%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 88%
+[DEBUG] Saved new volume: 88%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 86%
+[DEBUG] Saved new volume: 86%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 84%
+[DEBUG] Saved new volume: 84%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 82%
+[DEBUG] Saved new volume: 82%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 80%
+[DEBUG] Saved new volume: 80%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 78%
+[DEBUG] Saved new volume: 78%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 80%
+[DEBUG] Saved new volume: 80%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 78%
+[DEBUG] Saved new volume: 78%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 76%
+[DEBUG] Saved new volume: 76%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 74%
+[DEBUG] Saved new volume: 74%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 72%
+[DEBUG] Saved new volume: 72%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Spotify sink-input #2 volume changed by user → 70%
+[DEBUG] Saved new volume: 70%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #223
+[DEBUG] Event: Event 'remove' on sink-input #223
+[DEBUG] Event: Event 'new' on sink-input #224
+[DEBUG] Event: Event 'change' on sink-input #224
+[DEBUG] Event: Event 'change' on sink-input #224
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #224
+[DEBUG] Event: Event 'remove' on sink-input #224
+[DEBUG] Event: Event 'new' on sink-input #225
+[DEBUG] Event: Event 'change' on sink-input #225
+[DEBUG] Event: Event 'change' on sink-input #225
+[DEBUG] Event: Event 'change' on sink-input #225
+[DEBUG] Event: Event 'remove' on sink-input #225
+[DEBUG] Event: Event 'new' on sink-input #226
+[DEBUG] Event: Event 'change' on sink-input #226
+[DEBUG] Event: Event 'change' on sink-input #226
+[DEBUG] Event: Event 'change' on sink-input #226
+[DEBUG] Event: Event 'remove' on sink-input #226
+[DEBUG] Event: Event 'new' on sink-input #227
+[DEBUG] Event: Event 'change' on sink-input #227
+[DEBUG] Event: Event 'change' on sink-input #227
+[DEBUG] Event: Event 'change' on sink-input #227
+[DEBUG] Event: Event 'remove' on sink-input #227
+[DEBUG] Event: Event 'new' on sink-input #228
+[DEBUG] Event: Event 'change' on sink-input #228
+[DEBUG] Event: Event 'change' on sink-input #228
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #228
+[DEBUG] Event: Event 'remove' on sink-input #228
+[DEBUG] Event: Event 'new' on sink-input #229
+[DEBUG] Event: Event 'change' on sink-input #229
+[DEBUG] Event: Event 'change' on sink-input #229
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #229
+[DEBUG] Event: Event 'remove' on sink-input #229
+[DEBUG] Event: Event 'new' on sink-input #230
+[DEBUG] Event: Event 'change' on sink-input #230
+[DEBUG] Event: Event 'change' on sink-input #230
+[DEBUG] Event: Event 'change' on sink-input #230
+[DEBUG] Event: Event 'remove' on sink-input #230
+[DEBUG] Event: Event 'new' on sink-input #231
+[DEBUG] Event: Event 'change' on sink-input #231
+[DEBUG] Event: Event 'change' on sink-input #231
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #231
+[DEBUG] Event: Event 'remove' on sink-input #231
+[DEBUG] Event: Event 'new' on sink-input #232
+[DEBUG] Event: Event 'change' on sink-input #232
+[DEBUG] Event: Event 'change' on sink-input #232
+[DEBUG] Event: Event 'change' on sink-input #232
+[DEBUG] Event: Event 'remove' on sink-input #232
+[DEBUG] Event: Event 'new' on sink-input #233
+[DEBUG] Event: Event 'change' on sink-input #233
+[DEBUG] Event: Event 'change' on sink-input #233
+[DEBUG] Event: Event 'change' on sink-input #233
+[DEBUG] Event: Event 'remove' on sink-input #233
+[DEBUG] Event: Event 'new' on sink-input #234
+[DEBUG] Event: Event 'change' on sink-input #234
+[DEBUG] Event: Event 'change' on sink-input #234
+[DEBUG] Event: Event 'change' on sink-input #234
+[DEBUG] Event: Event 'remove' on sink-input #234
+[DEBUG] Event: Event 'new' on sink-input #235
+[DEBUG] Event: Event 'change' on sink-input #235
+[DEBUG] Event: Event 'change' on sink-input #235
+[DEBUG] Event: Event 'change' on sink-input #235
+[DEBUG] Event: Event 'remove' on sink-input #235
+[DEBUG] Event: Event 'new' on sink-input #236
+[DEBUG] Event: Event 'change' on sink-input #236
+[DEBUG] Event: Event 'change' on sink-input #236
+[DEBUG] Event: Event 'change' on sink-input #236
+[DEBUG] Event: Event 'remove' on sink-input #236
+[DEBUG] Event: Event 'new' on sink-input #237
+[DEBUG] Event: Event 'change' on sink-input #237
+[DEBUG] Event: Event 'change' on sink-input #237
+[DEBUG] Event: Event 'change' on sink-input #237
+[DEBUG] Event: Event 'remove' on sink-input #237
+[DEBUG] Event: Event 'new' on sink-input #238
+[DEBUG] Event: Event 'change' on sink-input #238
+[DEBUG] Event: Event 'change' on sink-input #238
+[DEBUG] Event: Event 'change' on sink-input #238
+[DEBUG] Event: Event 'remove' on sink-input #238
+[DEBUG] Event: Event 'new' on sink-input #239
+[DEBUG] Event: Event 'change' on sink-input #239
+[DEBUG] Event: Event 'change' on sink-input #239
+[DEBUG] Event: Event 'change' on sink-input #239
+[DEBUG] Event: Event 'remove' on sink-input #239
+[DEBUG] Event: Event 'new' on sink-input #240
+[DEBUG] Event: Event 'change' on sink-input #240
+[DEBUG] Event: Event 'change' on sink-input #240
+[DEBUG] Event: Event 'change' on sink-input #240
+[DEBUG] Event: Event 'remove' on sink-input #240
+[DEBUG] Event: Event 'new' on sink-input #241
+[DEBUG] Event: Event 'change' on sink-input #241
+[DEBUG] Event: Event 'change' on sink-input #241
+[DEBUG] Event: Event 'change' on sink-input #241
+[DEBUG] Event: Event 'remove' on sink-input #241
+[DEBUG] Event: Event 'new' on sink-input #242
+[DEBUG] Event: Event 'change' on sink-input #242
+[DEBUG] Event: Event 'change' on sink-input #242
+[DEBUG] Event: Event 'change' on sink-input #242
+[DEBUG] Event: Event 'remove' on sink-input #242
+[DEBUG] Event: Event 'new' on sink-input #243
+[DEBUG] Event: Event 'change' on sink-input #243
+[DEBUG] Event: Event 'change' on sink-input #243
+[DEBUG] Event: Event 'change' on sink-input #243
+[DEBUG] Event: Event 'remove' on sink-input #243
+[DEBUG] Event: Event 'new' on sink-input #244
+[DEBUG] Event: Event 'change' on sink-input #244
+[DEBUG] Event: Event 'change' on sink-input #244
+[DEBUG] Event: Event 'change' on sink-input #244
+[DEBUG] Event: Event 'remove' on sink-input #244
+[DEBUG] Event: Event 'new' on sink-input #245
+[DEBUG] Event: Event 'change' on sink-input #245
+[DEBUG] Event: Event 'change' on sink-input #245
+[DEBUG] Event: Event 'change' on sink-input #245
+[DEBUG] Event: Event 'remove' on sink-input #245
+[DEBUG] Event: Event 'new' on sink-input #246
+[DEBUG] Event: Event 'change' on sink-input #246
+[DEBUG] Event: Event 'change' on sink-input #246
+[DEBUG] Event: Event 'change' on sink-input #246
+[DEBUG] Event: Event 'remove' on sink-input #246
+[DEBUG] Event: Event 'new' on sink-input #247
+[DEBUG] Event: Event 'change' on sink-input #247
+[DEBUG] Event: Event 'change' on sink-input #247
+[DEBUG] Event: Event 'change' on sink-input #247
+[DEBUG] Event: Event 'remove' on sink-input #247
+[DEBUG] Event: Event 'new' on sink-input #248
+[DEBUG] Event: Event 'change' on sink-input #248
+[DEBUG] Event: Event 'change' on sink-input #248
+[DEBUG] Event: Event 'change' on sink-input #248
+[DEBUG] Event: Event 'remove' on sink-input #248
+[DEBUG] Event: Event 'new' on sink-input #249
+[DEBUG] Event: Event 'change' on sink-input #249
+[DEBUG] Event: Event 'change' on sink-input #249
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #249
+[DEBUG] Event: Event 'remove' on sink-input #249
+[DEBUG] Event: Event 'new' on sink-input #250
+[DEBUG] Event: Event 'change' on sink-input #250
+[DEBUG] Event: Event 'change' on sink-input #250
+[DEBUG] Event: Event 'change' on sink-input #250
+[DEBUG] Event: Event 'remove' on sink-input #250
+[DEBUG] Event: Event 'new' on sink-input #251
+[DEBUG] Event: Event 'change' on sink-input #251
+[DEBUG] Event: Event 'change' on sink-input #251
+[DEBUG] Event: Event 'change' on sink-input #251
+[DEBUG] Event: Event 'remove' on sink-input #251
+[DEBUG] Event: Event 'new' on sink-input #252
+[DEBUG] Event: Event 'change' on sink-input #252
+[DEBUG] Event: Event 'change' on sink-input #252
+[DEBUG] Event: Event 'change' on sink-input #252
+[DEBUG] Event: Event 'change' on sink-input #252
+[DEBUG] Event: Event 'remove' on sink-input #252
+[DEBUG] Event: Event 'new' on sink-input #253
+[DEBUG] Event: Event 'change' on sink-input #253
+[DEBUG] Event: Event 'change' on sink-input #253
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #253
+[DEBUG] Event: Event 'remove' on sink-input #253
+[DEBUG] Event: Event 'new' on sink-input #254
+[DEBUG] Event: Event 'change' on sink-input #254
+[DEBUG] Event: Event 'change' on sink-input #254
+[DEBUG] Event: Event 'change' on sink-input #254
+[DEBUG] Event: Event 'remove' on sink-input #254
+[DEBUG] Event: Event 'new' on sink-input #255
+[DEBUG] Event: Event 'change' on sink-input #255
+[DEBUG] Event: Event 'change' on sink-input #255
+[DEBUG] Event: Event 'change' on sink-input #255
+[DEBUG] Event: Event 'remove' on sink-input #255
+[DEBUG] Event: Event 'new' on sink-input #256
+[DEBUG] Event: Event 'change' on sink-input #256
+[DEBUG] Event: Event 'change' on sink-input #256
+[DEBUG] Event: Event 'change' on sink-input #256
+[DEBUG] Event: Event 'remove' on sink-input #256
+[DEBUG] Event: Event 'new' on sink-input #257
+[DEBUG] Event: Event 'change' on sink-input #257
+[DEBUG] Event: Event 'change' on sink-input #257
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #257
+[DEBUG] Event: Event 'remove' on sink-input #257
+[DEBUG] Event: Event 'new' on sink-input #258
+[DEBUG] Event: Event 'change' on sink-input #258
+[DEBUG] Event: Event 'change' on sink-input #258
+[DEBUG] Event: Event 'change' on sink-input #258
+[DEBUG] Event: Event 'remove' on sink-input #258
+[DEBUG] Event: Event 'new' on sink-input #259
+[DEBUG] Event: Event 'change' on sink-input #259
+[DEBUG] Event: Event 'change' on sink-input #259
+[DEBUG] Event: Event 'change' on sink-input #259
+[DEBUG] Event: Event 'remove' on sink-input #259
+[DEBUG] Event: Event 'new' on sink-input #260
+[DEBUG] Event: Event 'change' on sink-input #260
+[DEBUG] Event: Event 'change' on sink-input #260
+[DEBUG] Event: Event 'change' on sink-input #260
+[DEBUG] Event: Event 'remove' on sink-input #260
+[DEBUG] Event: Event 'new' on sink-input #261
+[DEBUG] Event: Event 'change' on sink-input #261
+[DEBUG] Event: Event 'change' on sink-input #261
+[DEBUG] Event: Event 'change' on sink-input #261
+[DEBUG] Event: Event 'remove' on sink-input #261
+[DEBUG] Event: Event 'new' on sink-input #262
+[DEBUG] Event: Event 'change' on sink-input #262
+[DEBUG] Event: Event 'change' on sink-input #262
+[DEBUG] Event: Event 'change' on sink-input #262
+[DEBUG] Event: Event 'remove' on sink-input #262
+[DEBUG] Event: Event 'new' on sink-input #263
+[DEBUG] Event: Event 'change' on sink-input #263
+[DEBUG] Event: Event 'change' on sink-input #263
+[DEBUG] Event: Event 'change' on sink-input #263
+[DEBUG] Event: Event 'remove' on sink-input #263
+[DEBUG] Event: Event 'new' on sink-input #264
+[DEBUG] Event: Event 'change' on sink-input #264
+[DEBUG] Event: Event 'change' on sink-input #264
+[DEBUG] Event: Event 'change' on sink-input #264
+[DEBUG] Event: Event 'remove' on sink-input #264
+[DEBUG] Event: Event 'new' on sink-input #265
+[DEBUG] Event: Event 'change' on sink-input #265
+[DEBUG] Event: Event 'change' on sink-input #265
+[DEBUG] Event: Event 'change' on sink-input #265
+[DEBUG] Event: Event 'remove' on sink-input #265
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #266
+[DEBUG] Event: Event 'change' on sink-input #266
+[DEBUG] Event: Event 'change' on sink-input #266
+[DEBUG] Event: Event 'change' on sink-input #266
+[DEBUG] Event: Event 'remove' on sink-input #266
+[DEBUG] Event: Event 'new' on sink-input #267
+[DEBUG] Event: Event 'change' on sink-input #267
+[DEBUG] Event: Event 'change' on sink-input #267
+[DEBUG] Event: Event 'change' on sink-input #267
+[DEBUG] Event: Event 'remove' on sink-input #267
+[DEBUG] Event: Event 'new' on sink-input #268
+[DEBUG] Event: Event 'change' on sink-input #268
+[DEBUG] Event: Event 'change' on sink-input #268
+[DEBUG] Event: Event 'change' on sink-input #268
+[DEBUG] Event: Event 'remove' on sink-input #268
+[DEBUG] Event: Event 'new' on sink-input #269
+[DEBUG] Event: Event 'change' on sink-input #269
+[DEBUG] Event: Event 'change' on sink-input #269
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #270
+[DEBUG] Event: Event 'change' on sink-input #270
+[DEBUG] Event: Event 'change' on sink-input #270
+[DEBUG] Event: Event 'change' on sink-input #270
+[DEBUG] Event: Event 'change' on sink-input #270
+[DEBUG] Event: Event 'remove' on sink-input #270
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'new' on sink-input #271
+[DEBUG] Event: Event 'change' on sink-input #271
+[DEBUG] Event: Event 'change' on sink-input #271
+[DEBUG] Event: Event 'change' on sink-input #271
+[DEBUG] Event: Event 'change' on sink-input #271
+[DEBUG] Event: Event 'remove' on sink-input #271
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Stopped reset to 100%
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #2
+[DEBUG] Event: Event 'change' on sink-input #269
+[DEBUG] Event: Event 'remove' on sink-input #269
+[DEBUG] Event: Event 'new' on sink-input #272
+[DEBUG] Event: Event 'change' on sink-input #272
+[DEBUG] Event: Event 'change' on sink-input #272
+[DEBUG] Event: Event 'new' on sink-input #273
+[DEBUG] Event: Event 'change' on sink-input #273
+[DEBUG] Event: Event 'change' on sink-input #273
+[DEBUG] Event: Event 'change' on sink-input #273
+[DEBUG] Event: Event 'change' on sink-input #273
+[DEBUG] Event: Event 'remove' on sink-input #273
+[DEBUG] Event: Event 'new' on sink-input #274
+[DEBUG] Event: Event 'change' on sink-input #274
+[DEBUG] Event: Event 'change' on sink-input #274
+[DEBUG] Event: Event 'change' on sink-input #274
+[DEBUG] Event: Event 'remove' on sink-input #274
+[DEBUG] Event: Event 'new' on sink-input #275
+[DEBUG] Event: Event 'change' on sink-input #275
+[DEBUG] Event: Event 'change' on sink-input #275
+[DEBUG] Event: Event 'change' on sink-input #275
+[DEBUG] Event: Event 'remove' on sink-input #275
+[DEBUG] Event: Event 'change' on sink-input #272
+[DEBUG] Event: Event 'remove' on sink-input #272
+[DEBUG] Event: Event 'new' on sink-input #276
+[DEBUG] Event: Event 'change' on sink-input #276
+[DEBUG] Event: Event 'change' on sink-input #276
+[DEBUG] Event: Event 'change' on sink-input #276
+[DEBUG] Event: Event 'remove' on sink-input #276
+[DEBUG] Event: Event 'new' on sink-input #277
+[DEBUG] Event: Event 'change' on sink-input #277
+[DEBUG] Event: Event 'change' on sink-input #277
+[DEBUG] Event: Event 'change' on sink-input #277
+[DEBUG] Event: Event 'remove' on sink-input #277
+[DEBUG] Event: Event 'new' on sink-input #278
+[DEBUG] Event: Event 'change' on sink-input #278
+[DEBUG] Event: Event 'change' on sink-input #278
+[DEBUG] Event: Event 'change' on sink-input #278
+[DEBUG] Event: Event 'remove' on sink-input #278
+[DEBUG] Event: Event 'new' on sink-input #279
+[DEBUG] Event: Event 'change' on sink-input #279
+[DEBUG] Event: Event 'change' on sink-input #279
+[DEBUG] Event: Event 'change' on sink-input #279
+[DEBUG] Event: Event 'remove' on sink-input #279
+[DEBUG] Event: Event 'new' on sink-input #280
+[DEBUG] Event: Event 'change' on sink-input #280
+[DEBUG] Event: Event 'change' on sink-input #280
+[DEBUG] Event: Event 'change' on sink-input #280
+[DEBUG] Event: Event 'remove' on sink-input #280
+[DEBUG] Event: Event 'new' on sink-input #281
+[DEBUG] Event: Event 'change' on sink-input #281
+[DEBUG] Event: Event 'change' on sink-input #281
+[DEBUG] Event: Event 'change' on sink-input #281
+[DEBUG] Event: Event 'remove' on sink-input #281
+[DEBUG] Event: Event 'new' on sink-input #282
+[DEBUG] Event: Event 'change' on sink-input #282
+[DEBUG] Event: Event 'change' on sink-input #282
+[DEBUG] Event: Event 'change' on sink-input #282
+[DEBUG] Event: Event 'remove' on sink-input #282
+[DEBUG] Event: Event 'new' on sink-input #283
+[DEBUG] Event: Event 'change' on sink-input #283
+[DEBUG] Event: Event 'change' on sink-input #283
+[DEBUG] Event: Event 'change' on sink-input #283
+[DEBUG] Event: Event 'remove' on sink-input #283
+[DEBUG] Event: Event 'new' on sink-input #284
+[DEBUG] Event: Event 'change' on sink-input #284
+[DEBUG] Event: Event 'change' on sink-input #284
+[DEBUG] Event: Event 'change' on sink-input #284
+[DEBUG] Event: Event 'remove' on sink-input #284
+[DEBUG] Event: Event 'new' on sink-input #285
+[DEBUG] Event: Event 'change' on sink-input #285
+[DEBUG] Event: Event 'change' on sink-input #285
+[DEBUG] Event: Event 'change' on sink-input #285
+[DEBUG] Event: Event 'remove' on sink-input #285
+[DEBUG] Event: Event 'new' on sink-input #286
+[DEBUG] Event: Event 'change' on sink-input #286
+[DEBUG] Event: Event 'change' on sink-input #286
+[DEBUG] Event: Event 'change' on sink-input #286
+[DEBUG] Event: Event 'remove' on sink-input #286
+[DEBUG] Event: Event 'new' on sink-input #287
+[DEBUG] Event: Event 'change' on sink-input #287
+[DEBUG] Event: Event 'change' on sink-input #287
+[DEBUG] Event: Event 'change' on sink-input #287
+[DEBUG] Event: Event 'remove' on sink-input #287
+[DEBUG] Event: Event 'new' on sink-input #288
+[DEBUG] Event: Event 'change' on sink-input #288
+[DEBUG] Event: Event 'change' on sink-input #288
+[DEBUG] Event: Event 'change' on sink-input #288
+[DEBUG] Event: Event 'remove' on sink-input #288
+[DEBUG] Event: Event 'new' on sink-input #289
+[DEBUG] Event: Event 'change' on sink-input #289
+[DEBUG] Event: Event 'change' on sink-input #289
+[DEBUG] Event: Event 'change' on sink-input #289
+[DEBUG] Event: Event 'remove' on sink-input #289
+[DEBUG] Event: Event 'new' on sink-input #290
+[DEBUG] Event: Event 'change' on sink-input #290
+[DEBUG] Event: Event 'change' on sink-input #290
+[DEBUG] Event: Event 'change' on sink-input #290
+[DEBUG] Event: Event 'remove' on sink-input #290
+[DEBUG] Event: Event 'new' on sink-input #291
+[DEBUG] Event: Event 'change' on sink-input #291
+[DEBUG] Event: Event 'change' on sink-input #291
+[DEBUG] Event: Event 'change' on sink-input #291
+[DEBUG] Event: Event 'remove' on sink-input #291
+[DEBUG] Event: Event 'new' on sink-input #292
+[DEBUG] Event: Event 'change' on sink-input #292
+[DEBUG] Event: Event 'change' on sink-input #292
+[DEBUG] Event: Event 'change' on sink-input #292
+[DEBUG] Event: Event 'remove' on sink-input #292
+[DEBUG] Event: Event 'new' on sink-input #293
+[DEBUG] Event: Event 'change' on sink-input #293
+[DEBUG] Event: Event 'change' on sink-input #293
+[DEBUG] Event: Event 'change' on sink-input #293
+[DEBUG] Event: Event 'remove' on sink-input #293
+[DEBUG] Event: Event 'new' on sink-input #294
+[DEBUG] Event: Event 'change' on sink-input #294
+[DEBUG] Event: Event 'change' on sink-input #294
+[DEBUG] Event: Event 'change' on sink-input #294
+[DEBUG] Event: Event 'remove' on sink-input #294
+[DEBUG] Event: Event 'new' on sink-input #295
+[DEBUG] Event: Event 'change' on sink-input #295
+[DEBUG] Event: Event 'change' on sink-input #295
+[DEBUG] Event: Event 'change' on sink-input #295
+[DEBUG] Event: Event 'remove' on sink-input #295
+[DEBUG] Event: Event 'new' on sink-input #296
+[DEBUG] Event: Event 'change' on sink-input #296
+[DEBUG] Event: Event 'change' on sink-input #296
+[DEBUG] Event: Event 'change' on sink-input #296
+[DEBUG] Event: Event 'remove' on sink-input #296
+[DEBUG] Event: Event 'new' on sink-input #297
+[DEBUG] Event: Event 'change' on sink-input #297
+[DEBUG] Event: Event 'change' on sink-input #297
+[DEBUG] Event: Event 'change' on sink-input #297
+[DEBUG] Event: Event 'remove' on sink-input #297
+[DEBUG] Event: Event 'new' on sink-input #298
+[DEBUG] Event: Event 'change' on sink-input #298
+[DEBUG] Event: Event 'change' on sink-input #298
+[DEBUG] Event: Event 'change' on sink-input #298
+[DEBUG] Event: Event 'remove' on sink-input #298
+[DEBUG] Event: Event 'new' on sink-input #299
+[DEBUG] Event: Event 'change' on sink-input #299
+[DEBUG] Event: Event 'change' on sink-input #299
+[DEBUG] Event: Event 'change' on sink-input #299
+[DEBUG] Event: Event 'remove' on sink-input #299
+[DEBUG] Event: Event 'new' on sink-input #300
+[DEBUG] Event: Event 'change' on sink-input #300
+[DEBUG] Event: Event 'change' on sink-input #300
+[DEBUG] Event: Event 'change' on sink-input #300
+[DEBUG] Event: Event 'remove' on sink-input #300
+[DEBUG] Event: Event 'new' on sink-input #301
+[DEBUG] Event: Event 'change' on sink-input #301
+[DEBUG] Event: Event 'change' on sink-input #301
+[DEBUG] Event: Event 'change' on sink-input #301
+[DEBUG] Event: Event 'remove' on sink-input #301
+[DEBUG] Event: Event 'new' on sink-input #302
+[DEBUG] Event: Event 'change' on sink-input #302
+[DEBUG] Event: Event 'change' on sink-input #302
+[DEBUG] Event: Event 'change' on sink-input #302
+[DEBUG] Event: Event 'remove' on sink-input #302
+[DEBUG] Event: Event 'new' on sink-input #303
+[DEBUG] Event: Event 'change' on sink-input #303
+[DEBUG] Event: Event 'change' on sink-input #303
+[DEBUG] Event: Event 'change' on sink-input #303
+[DEBUG] Event: Event 'remove' on sink-input #303
+[DEBUG] Event: Event 'new' on sink-input #304
+[DEBUG] Event: Event 'change' on sink-input #304
+[DEBUG] Event: Event 'change' on sink-input #304
+[DEBUG] Event: Event 'change' on sink-input #304
+[DEBUG] Event: Event 'remove' on sink-input #304
+[DEBUG] Event: Event 'new' on sink-input #305
+[DEBUG] Event: Event 'change' on sink-input #305
+[DEBUG] Event: Event 'change' on sink-input #305
+[DEBUG] Event: Event 'change' on sink-input #305
+[DEBUG] Event: Event 'remove' on sink-input #305
+[DEBUG] Event: Event 'new' on sink-input #306
+[DEBUG] Event: Event 'change' on sink-input #306
+[DEBUG] Event: Event 'change' on sink-input #306
+[DEBUG] Event: Event 'change' on sink-input #306
+[DEBUG] Event: Event 'remove' on sink-input #306
+[DEBUG] Event: Event 'new' on sink-input #307
+[DEBUG] Event: Event 'change' on sink-input #307
+[DEBUG] Event: Event 'change' on sink-input #307
+[DEBUG] Event: Event 'change' on sink-input #307
+[DEBUG] Event: Event 'remove' on sink-input #307
+[DEBUG] Event: Event 'new' on sink-input #308
+[DEBUG] Event: Event 'change' on sink-input #308
+[DEBUG] Event: Event 'change' on sink-input #308
+[DEBUG] Event: Event 'change' on sink-input #308
+[DEBUG] Event: Event 'remove' on sink-input #308

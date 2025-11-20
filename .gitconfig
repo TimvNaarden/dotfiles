@@ -16,6 +16,17 @@
 	directory = /home/tim/D-Schijf/Coding/Websites/Infolan
 	directory = /home/tim/D-Schijf/Coding/Websites/Infolab
 	directory = /home/tim/D-Schijf/Coding/Websites/InfoLab
+	directory = /home/tim/D-Schijf/Coding/C++/Network Wrapper 2.0
+	directory = /home/tim/D-Schijf/Coding/Websites/ReactJS & NextJS/InfoLab
+	directory = /home/tim/D-Schijf/Coding/Websites/ReactJS & NextJS/AI-API
+	directory = /home/tim/D-Schijf/Coding/Portfolio
+	directory = /home/tim/D-Schijf/Coding/OS/OS Dev/OS
+	directory = /home/tim/D-Schijf/Coding/OS/OS Dev/UEFI
+	directory = /home/tim/D-Schijf/Coding/OS/edk2
+	directory = /home/tim/D-Schijf/Coding/OS/UEFI
+	directory = /home/tim/D-Schijf/Coding/OS/Legacy
+	directory = /home/tim/D-Schijf/Coding/OS/Website
+	directory = /home/tim/D-Schijf/Coding/Websites/CPP
 [user]
 	name = Tim van Naarden
 	email = TimvNaarden@outlook.com
@@ -29,3 +40,8 @@
 	editor = nvim
 [init]
 	defaultBranch = master
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

@@ -13,7 +13,7 @@ lspconfig.clangd.setup {
 }
 
 
-local servers = { "ts_ls", "tailwindcss", "eslint", "lua_ls", "dockerls" }
+local servers = { "ts_ls", "tailwindcss", "eslint", "lua_ls", "dockerls", "pyright"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

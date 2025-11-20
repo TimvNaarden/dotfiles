@@ -11,11 +11,18 @@ profile laptop {
 
 profile docked_only {
 	output eDP-1 disable
-    output DP-3 mode 2560x1440@60 position 0,0
+  output DP-3 mode 2560x1440@60 position 0,0
 	output DP-4 mode 2560x1440@60 position 2560,0
 }
 
 profile mDP {
 	output eDP-1 disable
 	output DP-2 mode 2560x1440@60 position 0,0
+}
+
+profile lxde {
+	output eDP disable
+	output DP-1-2 position 0,0
+	output DP-1-0.3 position 2560,0
+	output DP-1-0.2 position 5120,0
 }
