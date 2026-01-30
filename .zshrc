@@ -19,3 +19,4 @@ bindkey "\E[F" end-of-line
 bindkey "\E[3~" delete-char
 
 export PATH=$PATH:/home/tim/.spicetify
+eval $(ssh-agent)
