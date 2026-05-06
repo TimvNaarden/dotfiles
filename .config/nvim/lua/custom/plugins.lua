@@ -1,4 +1,25 @@
 local plugins = {
+-- Copilot engine
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = { enabled = false }, -- disable inline suggestions (cmp handles it)
+        panel = { enabled = false },
+      })
+    end,
+  },
+
+  -- Copilot as a cmp source
+  {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end,
+  },
   {
     "Jezda1337/nvim-html-css",
     dependencies = { "hrsh7th/nvim-cmp", "nvim-treesitter/nvim-treesitter" },

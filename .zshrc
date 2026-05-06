@@ -5,7 +5,7 @@ ZSH_THEME="refined" # set by `omz`
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
-alias kanshiswitch="mv ~/.config/kanshi/config ~/.config/kanshi/config1 && mv ~/.config/kanshi/config2 ~/.config/kanshi/config && mv ~/.config/kanshi/config1 ~/.config/kanshi/config2 && kanshi &"
+alias kanshiswitch="mv ~/.config/kanshi/config ~/.config/kanshi/config1 && mv ~/.config/kanshi/config2 ~/.config/kanshi/config && mv ~/.config/kanshi/config1 ~/.config/kanshi/config2 && killall kanshi && kanshi &"
 alias pi="sudo pacman -S"
 alias pu="sudo pacman -Sy"
 

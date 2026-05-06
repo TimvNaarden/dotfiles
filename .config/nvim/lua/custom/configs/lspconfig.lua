@@ -11,7 +11,15 @@ lspconfig.clangd.setup {
   end,
   capabilities = capabilities,
 }
-
+lspconfig.arduino_language_server.setup({
+    cmd = {
+        "arduino-language-server",
+        "-clangd",      "/usr/bin/clangd",
+        "-cli",         "/usr/bin/arduino-cli",
+        "-cli-config",  "/home/tim/.arduinoIDE/arduino-cli.yaml",
+        "-fqbn",  "esp32:esp32:esp32s3"
+    }
+})
 
 local servers = { "ts_ls", "tailwindcss", "eslint", "lua_ls", "dockerls", "pyright"}
 
