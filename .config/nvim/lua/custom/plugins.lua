@@ -1,4 +1,13 @@
 local plugins = {
+  {
+    dir = vim.fn.stdpath("config"),
+    name = "project-macros",
+    lazy = false,
+    priority = 900,
+    config = function()
+      require("custom.configs.project").setup()
+    end,
+  },
 -- Copilot engine
   {
     "zbirenbaum/copilot.lua",
@@ -69,12 +78,9 @@ local plugins = {
     end,
   },
   {
-    "nvim-neotest/nvim-nio"
-  },
-  {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
-    dependencies = "mfussenegger/nvim-dap",
+    dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
     config = function()
       local dap = require("dap")
       local dapui = require("dapui")
@@ -105,6 +111,7 @@ local plugins = {
     "mfussenegger/nvim-dap",
     config = function(_, _)
       require("core.utils").load_mappings("dap")
+      require("custom.configs.dap")
     end
   },
   {
@@ -126,7 +133,6 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end,
   },
@@ -142,6 +148,8 @@ local plugins = {
         "tailwindcss-language-server",
         "typescript-language-server",
         "dockerfile-language-server",
+        "arduino-language-server",
+        "pyright"
       }
     }
   },
@@ -154,6 +162,7 @@ local plugins = {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    commit = "v0.9.3",
     opts = function()
       local opts = require "plugins.configs.treesitter"
       opts.ensure_installed = {
