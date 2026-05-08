@@ -1,4 +1,23 @@
 local plugins = {
+
+  {
+    "seblyng/roslyn.nvim",
+    ft = "cs",
+    config = function()
+      require("roslyn").setup({
+        config = {
+          settings = {
+            ["csharp|completion"] = {
+              dotnet_show_completion_items_from_unimported_namespaces = true,
+            },
+            ["csharp|inlay_hints"] = {
+              csharp_enable_inlay_hints_for_implicit_variable_types = true,
+            },
+          },
+        },
+      })
+    end,
+  },
   {
     dir = vim.fn.stdpath("config"),
     name = "project-macros",
@@ -132,6 +151,8 @@ local plugins = {
   },
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
+    priority = 1000,
     config = function()
       require "custom.configs.lspconfig"
     end,
@@ -149,8 +170,12 @@ local plugins = {
         "typescript-language-server",
         "dockerfile-language-server",
         "arduino-language-server",
-        "pyright"
-      }
+        "pyright",
+      },
+      registries = {
+        "github:mason-org/mason-registry",
+        "github:Crashdummyy/mason-registry",  -- ← provides roslyn
+      },
     }
   },
   {

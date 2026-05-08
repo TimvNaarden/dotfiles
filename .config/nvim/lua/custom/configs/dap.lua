@@ -8,7 +8,11 @@ dap.adapters["pwa-node"] = {
     command = "js-debug-adapter",
   }
 }
-
+dap.adapters.coreclr = {
+  type = 'executable',
+  command = vim.fn.exepath('netcoredbg'),
+  args = { '--interpreter=vscode' }
+}
 for _, language in ipairs { "typescript", "javascript" } do
   dap.configurations[language] = {
     {
@@ -35,3 +39,18 @@ dap.configurations.cpp = {
   },
 }
 dap.configurations.c = dap.configurations.cpp
+
+
+dap.configurations.cs = {
+  {
+    type = 'coreclr',
+    name = 'Launch SpectralRenderer',
+    request = 'launch',
+    program = function()
+      -- Always build before debugging
+      vim.fn.system('dotnet build -c Debug')
+      return vim.fn.getcwd() .. '/bin/Debug/net10.0/SpectralRenderer.dll'
+    end,
+    cwd = vim.fn.getcwd() .. '/bin/Debug/net10.0/',
+  },
+}

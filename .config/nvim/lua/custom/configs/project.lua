@@ -65,7 +65,7 @@ function M.setup()
   })
 
   -- Register user commands (always available, use macros if set)
-  for cmd, key in pairs({ RunCompile="compile", RunTest="test", RunRun="run", RunLint="lint", RunUpload="upload", RunDebug="debug" }) do
+  for cmd, key in pairs({ RunCompile="compile", RunTest="test", RunRun="run", RunLint="lint", RunUpload="upload", RunDebug="debug", RunRelease="release", RunBuild='build' }) do
     local k = key
     vim.api.nvim_create_user_command(cmd, function()
       if M.macros[k] then

@@ -37,6 +37,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
     if client and not require("core.utils").load_config().ui.lsp_semantic_tokens then
       client.server_capabilities.semanticTokensProvider = nil
     end
+    -- if client.name == "roslyn" then
+    --   client.server_capabilities.documentFormattingProvider = false
+    --   client.server_capabilities.documentRangeFormattingProvider = false
+    -- end
   end,
 })
 
@@ -71,10 +75,10 @@ vim.lsp.config('clangd', {
 vim.lsp.config('arduino_language_server', {
   cmd = {
     "arduino-language-server",
-    "-clangd",     "/usr/bin/clangd",
-    "-cli",        "/usr/bin/arduino-cli",
+    "-clangd", "/usr/bin/clangd",
+    "-cli", "/usr/bin/arduino-cli",
     "-cli-config", "/home/tim/.arduinoIDE/arduino-cli.yaml",
-    "-fqbn",       "esp32:esp32:esp32s3"
+    "-fqbn", "esp32:esp32:esp32s3"
   },
 })
 
@@ -88,4 +92,18 @@ vim.lsp.enable({
   "lua_ls",
   "dockerls",
   "pyright",
+})
+
+vim.diagnostic.config({
+  signs = false,
+  virtual_text = {
+    severity = { min = vim.diagnostic.severity.ERROR },
+  },
+  underline = {
+    severity = { min = vim.diagnostic.severity.ERROR },
+  },
+  jump = {
+    severity = { min = vim.diagnostic.severity.ERROR },
+  },
+  severity_sort = true,
 })

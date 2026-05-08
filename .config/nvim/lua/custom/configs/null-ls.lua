@@ -4,7 +4,14 @@ local null_ls = require("null-ls")
 local opts = {
   sources = {
     null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.formatting.clang_format.with({ extra_args = { "--style=file" } }),
+    null_ls.builtins.formatting.clang_format.with({
+      extra_args = { "--style=file" },
+      filetypes = { "c", "cpp", "h", "hpp" },
+    }),
+    null_ls.builtins.formatting.csharpier.with({
+      command = vim.fn.stdpath("data") .. "/mason/bin/csharpier",
+      args = { "format", "--write-stdout" },
+    }),
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
