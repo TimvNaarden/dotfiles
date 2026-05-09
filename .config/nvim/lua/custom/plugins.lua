@@ -1,6 +1,15 @@
 local plugins = {
 
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "lua", "vim", "vimdoc", "python", "javascript",
+        "typescript", "json", "bash", "markdown", "markdown_inline",
+      },
+    },
+  },
+  {
     "seblyng/roslyn.nvim",
     ft = "cs",
     config = function()
@@ -18,6 +27,7 @@ local plugins = {
       })
     end,
   },
+
   {
     dir = vim.fn.stdpath("config"),
     name = "project-macros",
@@ -27,7 +37,7 @@ local plugins = {
       require("custom.configs.project").setup()
     end,
   },
--- Copilot engine
+  -- Copilot engine
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
@@ -174,7 +184,7 @@ local plugins = {
       },
       registries = {
         "github:mason-org/mason-registry",
-        "github:Crashdummyy/mason-registry",  -- ← provides roslyn
+        "github:Crashdummyy/mason-registry", -- ← provides roslyn
       },
     }
   },
@@ -183,20 +193,6 @@ local plugins = {
     ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
     config = function()
       require("nvim-ts-autotag").setup()
-    end,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    commit = "v0.9.3",
-    opts = function()
-      local opts = require "plugins.configs.treesitter"
-      opts.ensure_installed = {
-        "lua",
-        "javascript",
-        "typescript",
-        "tsx",
-      }
-      return opts
     end,
   },
   {
