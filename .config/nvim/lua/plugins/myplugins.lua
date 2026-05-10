@@ -1,13 +1,14 @@
--- lua/custom/configs/project.lua
 local M = {}
 M.macros = {}
-M._active_keymaps = {}  -- track registered keys for cleanup
+M._active_keymaps = {} -- track registered keys for cleanup
 
 local function load_file(path)
   local f = loadfile(path)
   if f then
     local ok, result = pcall(f)
-    if ok and type(result) == "table" then return result end
+    if ok and type(result) == "table" then
+      return result
+    end
   end
 end
 
@@ -33,7 +34,7 @@ end
 
 function M.setup()
   -- Load global defaults (~/.nvim-project.lua)
-  local g = load_file(vim.fn.expand("~/.nvim-project.lua"))
+  local g = load_file(vim.fn.expand "~/.nvim-project.lua")
   if g then
     M.macros = vim.tbl_deep_extend("force", M.macros, g.macros or {})
     apply_keymaps(g.keymaps)
@@ -46,8 +47,10 @@ function M.setup()
     if l then
       M.macros = vim.tbl_deep_extend("force", M.macros, l.macros or {})
       apply_keymaps(l.keymaps)
-      if l.on_load then l.on_load() end
-      vim.notify("📁 Project config loaded", vim.log.levels.INFO)
+      if l.on_load then
+        l.on_load()
+      end
+      --vim.notify("📁 Project config loaded", vim.log.levels.INFO)
     else
       clear_keymaps()
     end
@@ -64,8 +67,26 @@ function M.setup()
     desc = "Reload project config on directory change",
   })
 
+  vim.api.nvim_create_user_command("ReloadProject", function()
+    M.macros = {}
+    load_local()
+    vim.notify("Project macros reloaded", vim.log.levels.INFO)
+  end, { desc = "Reload .nvim-project.lua" })
+
+  vim.keymap.set("n", "<leader>rp", "<cmd>ReloadProject<CR>", { desc = "Reload project macros" })
+
   -- Register user commands (always available, use macros if set)
-  for cmd, key in pairs({ RunCompile="compile", RunTest="test", RunRun="run", RunLint="lint", RunUpload="upload", RunDebug="debug", RunRelease="release", RunBuild='build' }) do
+  for cmd, key in pairs {
+    RunCompile = "compile",
+    RunTest = "test",
+    RunRun = "run",
+    RunLint = "lint",
+    RunUpload = "upload",
+    RunDebug = "debug",
+    RunRelease = "release",
+    RunBuild = "build",
+    RunClean = "clean",
+  } do
     local k = key
     vim.api.nvim_create_user_command(cmd, function()
       if M.macros[k] then
@@ -77,4 +98,12 @@ function M.setup()
   end
 end
 
-return M
+return {
+  {
+    dir = vim.fn.stdpath "config",
+    name = "project-macros",
+    lazy = false,
+    priority = 900,
+    config = M.setup(),
+  },
+}
