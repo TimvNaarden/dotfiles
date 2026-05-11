@@ -70,6 +70,19 @@ return {
         },
       })
 
+      vim.filetype.add {
+        extension = {
+          vert = "glsl",
+          tesc = "glsl",
+          tese = "glsl",
+          frag = "glsl",
+          geom = "glsl",
+          comp = "glsl",
+        },
+      }
+      vim.lsp.config("glsl_analyzer", {
+        filetypes = { "glsl" },
+      })
       -- Enable all servers (nvim-lspconfig provides the cmd/filetypes/root_markers)
       vim.lsp.enable {
         "clangd",
@@ -81,6 +94,7 @@ return {
         "dockerls",
         "pyright",
         "roslyn",
+        "glsl_analyzer",
       }
 
       vim.diagnostic.config {
