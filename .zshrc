@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/$HOME/.cargo/bin"
+export PATH="$PATH:/$HOME/.cargo/bin:/$HOME/.local/bin"
 
 ZSH_THEME="refined" # set by `omz`
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
