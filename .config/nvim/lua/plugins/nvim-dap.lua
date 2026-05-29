@@ -21,6 +21,10 @@ return {
         command = vim.fn.exepath "netcoredbg",
         args = { "--interpreter=vscode" },
       }
+      dap.adapters.codelldb = {
+        type = "executable",
+        command = "codelldb",
+      }
       for _, language in ipairs { "typescript", "javascript" } do
         dap.configurations[language] = {
           {

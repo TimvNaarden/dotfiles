@@ -75,7 +75,9 @@ function M.setup()
 
   vim.keymap.set("n", "<leader>rp", "<cmd>ReloadProject<CR>", { desc = "Reload project macros" })
 
-  -- Register user commands (always available, use macros if set)
+  -- Commands that launch interactive apps — run async in a terminal split
+  local async_cmds = { run = true, debug = true, release = true }
+
   for cmd, key in pairs {
     RunCompile = "compile",
     RunTest = "test",
@@ -90,9 +92,14 @@ function M.setup()
     local k = key
     vim.api.nvim_create_user_command(cmd, function()
       if M.macros[k] then
-        vim.cmd("!" .. M.macros[k])
+        if async_cmds[k] then
+          -- Open a terminal split, run there — non-blocking
+          vim.cmd("split | terminal " .. M.macros[k])
+        else
+          vim.cmd("!" .. M.macros[k])
+        end
       else
-        vim.notify("No '" .. k .. "' set in .nvim-project.lua", vim.log.levels.WARN)
+        vim.notify("No '" .. k .. "' macro set in .nvim-project.lua", vim.log.levels.WARN)
       end
     end, { desc = "Run project " .. k })
   end
@@ -104,6 +111,6 @@ return {
     name = "project-macros",
     lazy = false,
     priority = 900,
-    config = M.setup(),
+    config = M.setup,
   },
 }
