@@ -27,6 +27,54 @@ return {
         }),
         root_markers = { ".git" },
       })
+      -- ts_ls
+      vim.lsp.config("ts_ls", {
+        cmd = { "typescript-language-server", "--stdio" },
+        filetypes = {
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+        },
+        root_markers = { "tsconfig.json", "package.json" },
+        workspace_required = true,
+      })
+
+      -- tailwindcss
+      vim.lsp.config("tailwindcss", {
+        cmd = { "tailwindcss-language-server", "--stdio" },
+        filetypes = {
+          "html",
+          "css",
+          "scss",
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "vue",
+        },
+        root_markers = {
+          "tailwind.config.js",
+          "tailwind.config.cjs",
+          "tailwind.config.ts",
+          "package.json",
+        },
+        workspace_required = true,
+        settings = {
+          tailwindCSS = {
+            hovers = true,
+            suggestions = true,
+            codeActions = true,
+            experimental = {
+              -- Tell Tailwind to treat strings inside default: ["..."] as class lists
+              classRegex = {
+                -- Example for something like cva({ variants: { tone: { default: ["..."] } } })
+                'default:\\s*\\["([^"]*)"\\]',
+              },
+            },
+          },
+        },
+      })
       -- lua_ls specific settings
       vim.lsp.config("lua_ls", {
         settings = {
@@ -99,8 +147,36 @@ return {
         "dockerls",
         "pyright",
         "roslyn",
+        "prisma",
       }
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
 
+      vim.lsp.config("emmet_ls", {
+        capabilities = capabilities,
+        filetypes = {
+          "css",
+          "eruby",
+          "html",
+          "javascript",
+          "javascriptreact",
+          "less",
+          "sass",
+          "scss",
+          "svelte",
+          "pug",
+          "typescriptreact",
+          "vue",
+        },
+        init_options = {
+          html = {
+            options = {
+              ["bem.enabled"] = true,
+            },
+          },
+        },
+      })
+
+      vim.lsp.enable "emmet_ls"
       vim.diagnostic.config {
         signs = false,
         virtual_text = {
