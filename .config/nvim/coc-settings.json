@@ -1,0 +1,87 @@
+{
+  "suggest.noselect": true,
+  "suggest.enablePreview": true,
+  "diagnostic.errorSign": "✗",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextLevel": 1,
+  "tsserver.log": "verbose",
+  "tsserver.trace.server": "verbose",
+  "tsserver.enable": true,
+  "tsserver.maxTsServerMemory": 8192,
+  "tsserver.useLocalTsdk": true,
+  "tsserver.tsconfigPath": "tsconfig.json",
+  "typescript.suggest.autoImports": true,
+  "typescript.workspaceSymbols.scope": "allOpenProjects",
+  "workspace.workspaceFolderCheckCwd": true,
+  "workspace.workspaceFolderFallbackCwd": true,
+  "workspace.ignoredFolders": [
+    "$HOME",
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/dist/**",
+    "**/build/**"
+  ],
+
+  "eslint.autoFixOnSave": false,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "tailwindCSS.hovers": true,
+  "tailwindCSS.suggestions": true,
+  "tailwindCSS.codeActions": true,
+  "tailwindCSS.includeLanguages": {
+    "typescript": "typescriptreact",
+    "typescriptreact": "typescriptreact"
+  },
+  "tailwindCSS.experimental.classRegex": ["default:\\s*\\[\"([^\"]*)\"\\]"],
+
+  "pyright.enable": true,
+
+  "clangd.enable": true,
+  "clangd.arguments": [
+    "--offset-encoding=utf-16",
+    "--background-index",
+    "--clang-tidy"
+  ],
+
+  "sumneko-lua.enable": true,
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.workspace.library": ["$VIMRUNTIME/lua", "$VIMRUNTIME/lua/vim/lsp"],
+  "Lua.workspace.maxPreload": 100000,
+  "Lua.workspace.preloadFileSize": 10000,
+
+  "docker.enable": true,
+  "prisma.enable": true,
+
+  "languageserver": {
+    "roslyn": {
+      "command": "dotnet",
+      "args": [
+        "exec",
+        "/path/to/Microsoft.CodeAnalysis.LanguageServer.dll",
+        "--stdio"
+      ],
+      "filetypes": ["cs"],
+      "rootPatterns": ["*.sln", "*.csproj"]
+    },
+    "arduino": {
+      "command": "arduino-language-server",
+      "args": [
+        "-clangd",
+        "/usr/bin/clangd",
+        "-cli",
+        "/usr/bin/arduino-cli",
+        "-cli-config",
+        "/home/tim/.arduinoIDE/arduino-cli.yaml",
+        "-fqbn",
+        "esp32:esp32:esp32s3"
+      ],
+      "filetypes": ["arduino", "cpp"]
+    }
+  }
+}

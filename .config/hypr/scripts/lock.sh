@@ -1,0 +1,19 @@
+swaylock -i Desktop/background -s fill --clock --indicator \
+  --indicator-x-position 150 \
+  --indicator-y-position 150 \
+  --indicator-radius 150 \
+  --inside-color 00000000 \
+  --ring-color 00000000 \
+  --line-color 00000000 \
+  --key-hl-color 00000000 \
+  --ring-clear-color 00000000 \
+  --ring-ver-color 00000000 \
+  --ring-wrong-color 00000000 \
+  --separator-color 00000000 \
+  --text-color ffffffff \
+  --text-clear-color ffffffff \
+  --text-ver-color ffffffff \
+  --text-wrong-color ff5555ff \
+  --timestr "%R" --datestr "%A, %B %d" \
+  --font "Sans" \
+  --font-size 64

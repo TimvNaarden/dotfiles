@@ -36,8 +36,4 @@ vim.schedule(function()
   require "mappings"
 end)
 
--- vim.api.nvim_create_autocmd("CursorHold", {
---   callback = function()
---     vim.lsp.buf.hover { focusable = false }
---   end,
--- })
+-- Helper to make normal-mode maps shorter

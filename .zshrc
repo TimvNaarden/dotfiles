@@ -13,6 +13,7 @@ alias pr="sudo pacman -Rnc"
 alias resource=". /home/tim/.zshrc"
 alias p="pnpm"
 eval "$(zoxide init zsh)"
+eval "xrandr --auto &>/dev/null"
 
 bindkey "\E[1~" beginning-of-line
 bindkey "\E[4~" end-of-line
@@ -25,3 +26,7 @@ eval $(ssh-agent) > /dev/null
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
