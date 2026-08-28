@@ -1,0 +1,14 @@
+# Creating this file replaces stow's built-in ignore list entirely, so the
+# defaults worth keeping are repeated here.
+^/\.git$
+^/\.gitignore$
+^/\.gitmodules$
+^/\.stow-local-ignore$
+^/README.*
+^/LICENSE.*
+.+~
+\#.*\#
+
+# Repo-only, not configuration to be linked into $HOME.
+^/INSTALL\.md$
+^/packages$

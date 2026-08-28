@@ -1,1 +1,6 @@
 nextcloud-local.pem
+
+# TPM manages these itself from the @plugin lines in .tmux.conf. They used to be
+# tracked as gitlinks with no .gitmodules, so a fresh clone produced empty
+# directories and the plugin silently never loaded. See INSTALL.md.
+.tmux/plugins/

@@ -1,0 +1,72 @@
+{
+  "model": "opus[1m]",
+  "theme": "custom:loud-you",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" idle"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" running"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-session-title.py\""
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" needs-input"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-notify.py\" needs-input"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" done"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-notify.py\" done"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" idle"
+          }
+        ]
+      }
+    ]
+  },
+  "preferredNotifChannel": "notifications_disabled"
+}

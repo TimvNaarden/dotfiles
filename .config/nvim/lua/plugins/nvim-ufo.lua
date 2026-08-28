@@ -3,14 +3,21 @@ return {
   {
     "kevinhwang91/nvim-ufo",
     dependencies = "kevinhwang91/promise-async",
-    event = "BufReadPost", -- Load the plugin when a buffer is read
+    event = "BufReadPost",
     config = function()
-      vim.o.foldcolumn = "1" -- Show fold indicator in the gutter
+      vim.o.foldcolumn = "1"
       vim.o.foldlevel = 99
       vim.o.foldlevelstart = 99
       vim.o.foldenable = true
 
-      require("ufo").setup()
+      -- ufo defaults to the LSP fold provider, which no longer exists now that
+      -- coc replaced the native clients. Treesitter provides the same ranges,
+      -- with indent as the fallback for filetypes without a parser.
+      require("ufo").setup {
+        provider_selector = function()
+          return { "treesitter", "indent" }
+        end,
+      }
     end,
   },
 }

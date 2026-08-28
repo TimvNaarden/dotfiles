@@ -1,12 +1,11 @@
 {
   "suggest.noselect": true,
   "suggest.enablePreview": true,
-  "diagnostic.errorSign": "✗",
-  "diagnostic.warningSign": "⚠",
+  "diagnostic.errorSign": "\u2717",
+  "diagnostic.warningSign": "\u26a0",
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextLevel": 1,
-  "tsserver.log": "verbose",
-  "tsserver.trace.server": "verbose",
+  "tsserver.log": "off",
   "tsserver.enable": true,
   "tsserver.maxTsServerMemory": 8192,
   "tsserver.useLocalTsdk": true,
@@ -22,7 +21,6 @@
     "**/dist/**",
     "**/build/**"
   ],
-
   "eslint.autoFixOnSave": false,
   "eslint.filetypes": [
     "javascript",
@@ -30,7 +28,6 @@
     "typescript",
     "typescriptreact"
   ],
-
   "tailwindCSS.hovers": true,
   "tailwindCSS.suggestions": true,
   "tailwindCSS.codeActions": true,
@@ -38,37 +35,30 @@
     "typescript": "typescriptreact",
     "typescriptreact": "typescriptreact"
   },
-  "tailwindCSS.experimental.classRegex": ["default:\\s*\\[\"([^\"]*)\"\\]"],
-
+  "tailwindCSS.experimental.classRegex": [
+    "default:\\s*\\[\"([^\"]*)\"\\]"
+  ],
   "pyright.enable": true,
-
   "clangd.enable": true,
   "clangd.arguments": [
     "--offset-encoding=utf-16",
     "--background-index",
     "--clang-tidy"
   ],
-
   "sumneko-lua.enable": true,
-  "Lua.diagnostics.globals": ["vim"],
-  "Lua.workspace.library": ["$VIMRUNTIME/lua", "$VIMRUNTIME/lua/vim/lsp"],
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+  "Lua.workspace.library": [
+    "$VIMRUNTIME/lua",
+    "$VIMRUNTIME/lua/vim/lsp",
+    "${3rd}/luv/library"
+  ],
   "Lua.workspace.maxPreload": 100000,
   "Lua.workspace.preloadFileSize": 10000,
-
   "docker.enable": true,
   "prisma.enable": true,
-
   "languageserver": {
-    "roslyn": {
-      "command": "dotnet",
-      "args": [
-        "exec",
-        "/path/to/Microsoft.CodeAnalysis.LanguageServer.dll",
-        "--stdio"
-      ],
-      "filetypes": ["cs"],
-      "rootPatterns": ["*.sln", "*.csproj"]
-    },
     "arduino": {
       "command": "arduino-language-server",
       "args": [
@@ -81,7 +71,10 @@
         "-fqbn",
         "esp32:esp32:esp32s3"
       ],
-      "filetypes": ["arduino", "cpp"]
+      "filetypes": [
+        "arduino",
+        "cpp"
+      ]
     }
   }
 }

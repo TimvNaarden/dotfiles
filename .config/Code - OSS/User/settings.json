@@ -1,0 +1,29 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+
+  // Claude Code puts its worktrees in `<repo>/.claude/worktrees/<name>`, which
+  // is 3 levels deep (4 when the name contains a slash, e.g. `fix/some-thing`).
+  // The git extension only scans 1 level by default, so they never showed up in
+  // the Source Control view. Raising the depth makes each worktree appear as its
+  // own repository, with its own branch picker.
+  "git.repositoryScanMaxDepth": 4,
+  // Keep that deeper scan cheap by skipping folders that can never hold a repo.
+  // `node_modules` is the built-in default and has to be repeated here.
+  "git.repositoryScanIgnoredFolders": [
+    "node_modules",
+    "dist",
+    "build",
+    "out",
+    "coverage",
+    ".cache",
+    ".turbo",
+    ".vite",
+    ".next",
+    ".react-router",
+    ".pnpm-store",
+    "public"
+  ],
+  "git.autoRepositoryDetection": true,
+  // Show every detected repository at once instead of only the active one.
+  "scm.alwaysShowRepositories": true
+}
