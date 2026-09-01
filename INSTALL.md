@@ -129,9 +129,14 @@ the config overrides them either way because it is sourced after `run tpm`.
 
 ### tmux status-bar scripts
 
-`.config/tmux/scripts/` holds four Python/shell scripts the status bar calls.
-They need `python3` (already a pacman dependency) and nothing else. They are
-stowed with the rest, so no extra step.
+`.config/tmux/scripts/` holds five Python/shell scripts the status bar calls.
+They need `python3` and `git` (both already pacman dependencies) and nothing
+else. They are stowed with the rest, so no extra step.
+
+`claude-window-label.sh` names each window after the git branch of its first
+Claude Code pane, falling back to the session title when several windows share a
+branch, since three identical tabs identify nothing. Tab width is divided
+between the windows on screen, so they shrink instead of overflowing.
 
 ---
 
@@ -242,5 +247,16 @@ ls ~/.tmux/plugins/tpm/tpm
 nvim --headless "+lua print('nvim ok')" +qa
 ls ~/.config/coc/extensions/node_modules | wc -l      # expect 12
 python3 ~/.config/tmux/scripts/claude-limits.py       # prints usage percentages
+python3 ~/.config/tmux/scripts/claude-limits.py --debug   # cache freshness and token state
 notify-send -a test "notifications work"
 ```
+
+`claude-limits.py` reads its percentages from `GET /api/oauth/usage` directly,
+using the OAuth token in `~/.claude/.credentials.json`, and caches the result in
+`$XDG_CACHE_HOME/claude-limits/`. It does this because the
+`cachedUsageUtilization` block in `~/.claude.json` is only rewritten on
+infrequent triggers such as opening `/usage`, so it can sit twenty minutes stale
+while you work. The status line render never blocks on the network: it prints the
+cached figure and hands a stale cache off to a detached `--refresh` child. When
+the access token has expired the fetch is skipped and it falls back to Claude
+Code's block, so the worst case is the old behaviour rather than a hang.
