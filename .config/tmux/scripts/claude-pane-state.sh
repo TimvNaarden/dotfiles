@@ -7,6 +7,10 @@ set -uo pipefail
 [ -n "${TMUX:-}" ] || exit 0
 command -v tmux >/dev/null 2>&1 || exit 0
 
+# The title refiner spawns a nested `claude -p` that inherits TMUX_PANE; without
+# this it would mark the pane running and then done on every prompt.
+[ -n "${CLAUDE_TITLE_REFINER:-}" ] && exit 0
+
 state="${1:-}"
 pane="${TMUX_PANE:-}"
 [ -n "$pane" ] || exit 0

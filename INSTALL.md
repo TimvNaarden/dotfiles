@@ -138,6 +138,19 @@ Claude Code pane, falling back to the session title when several windows share a
 branch, since three identical tabs identify nothing. Tab width is divided
 between the windows on screen, so they shrink instead of overflowing.
 
+Session titles are set twice per prompt. `claude-session-title.py` strips the
+conversational filler off what you typed and returns that immediately, then
+spawns `claude-title-refine.sh`, which asks Claude Haiku 4.5 for a real 2-4 word
+name and replaces it about seven seconds later. The second pass costs a small
+Haiku turn against your subscription on every prompt; `prefix + T` turns it off
+and leaves the free heuristic in place.
+
+The refiner runs a nested `claude -p`, which inherits `TMUX_PANE` and would
+otherwise re-enter these same hooks, recursing and firing spurious
+notifications. Every hook script therefore exits early when
+`CLAUDE_TITLE_REFINER` is set. The `--bare` flag would also skip hooks but drops
+the OAuth credentials, so it is not usable here.
+
 ---
 
 ## 5. Neovim

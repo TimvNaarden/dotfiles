@@ -42,6 +42,12 @@ def shorten(text):
 
 
 def main():
+    # The refiner spawns a nested `claude -p`, which inherits TMUX_PANE and would
+    # otherwise run these hooks again. Recursion, plus a pane wrongly marked
+    # running and a spurious notification.
+    if os.environ.get("CLAUDE_TITLE_REFINER"):
+        return 0
+
     state = sys.argv[1] if len(sys.argv) > 1 else ""
     if state not in ("done", "needs-input"):
         return 0
