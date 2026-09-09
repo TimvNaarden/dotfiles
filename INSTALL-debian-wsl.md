@@ -57,6 +57,13 @@ command -v nvim                 # expect /usr/local/bin/nvim
 
 ## 2. System packages
 
+These are Neovim's prerequisites. The shell stack (zsh, tmux, zoxide) is
+installed by `scripts/install-wsl-shell.sh` in step 4, so it is not repeated
+here; the overlap between the two is harmless if you run both, since apt and the
+script are each idempotent. `zoxide` in particular is left to the script,
+because Debian does not package it on every release and the script falls back to
+the upstream installer.
+
 ```sh
 sudo apt update
 sudo apt install -y \
@@ -77,6 +84,10 @@ Why each of the less obvious ones:
 | `python3` | the tmux status-bar scripts in `.config/tmux/scripts/` |
 | `glslang-tools` | provides `glslangValidator`, which `lua/plugins/glslx.lua` shells out to for shader diagnostics. Skip if you do not write GLSL. |
 | `wslu` | provides `wslview`, used in step 7 to open a browser on the Windows side |
+
+`zsh`, `tmux` and `stow` appear above as well so that this list stands alone if
+you only want the editor. Step 4's script installs the same three and will
+simply report them as already present.
 
 ### Debian renames two binaries
 
@@ -121,55 +132,55 @@ Check: `node --version` returns v18 or newer.
 
 ---
 
-## 4. Clone and link
+## 4. Clone, then run the shell script
 
 ```sh
-git clone https://github.com/timvnaarden/dotfiles ~/dotfiles
+git clone https://github.com/TimvNaarden/dotfiles ~/dotfiles
 cd ~/dotfiles
 git checkout Cachy-os
+./scripts/install-wsl-shell.sh
 ```
 
-Then link only what makes sense here. These are relative links, matching the
-form stow uses, so a later `stow` run on this machine recognises them as its own
-rather than reporting a conflict:
+`scripts/install-wsl-shell.sh` does the whole shell stack, because none of it is
+interesting enough to do by hand twice:
+
+* installs `zsh`, `tmux`, `zoxide`, `git`, `python3` through apt
+* falls back to zoxide's upstream installer into `~/.local/bin` where Debian
+  does not package it. This is not optional: `.zshrc` line 10 is an unguarded
+  `eval "$(zoxide init zsh)"`, so a missing zoxide means "command not found" on
+  every new shell.
+* installs oh-my-zsh with `--keep-zshrc`, plus the `zsh-autosuggestions` and
+  `zsh-syntax-highlighting` plugins that `.zshrc` names but oh-my-zsh does not
+  bundle
+* clones TPM and installs the tmux plugins headlessly
+* links `.zshrc`, `.tmux.conf` and `.config/tmux`
+* offers to `chsh` to zsh, then starts a login zsh to see whether the config
+  loads without complaining
+
+It is safe to re-run: every step checks first, and a real file sitting where a
+symlink belongs is moved to `<name>.bak-<timestamp>` rather than overwritten.
+`--no-chsh` and `--no-tmux-plugins` skip those steps.
+
+Order matters in one place and the script gets it right: `.zshrc` is linked
+*before* oh-my-zsh installs. The other way round, the installer drops its own
+template in and your edits stop reaching the repo.
+
+### The Neovim links, by hand
+
+The script deliberately leaves Neovim alone, so it stays useful on a box where
+you only want a shell. Relative links, matching the form stow uses, so a later
+`stow` run adopts them rather than reporting a conflict:
 
 ```sh
 mkdir -p ~/.config ~/.claude
-ln -s ../dotfiles/.config/nvim  ~/.config/nvim
-ln -s ../dotfiles/.config/tmux  ~/.config/tmux
-ln -s dotfiles/.tmux.conf       ~/.tmux.conf
-ln -s dotfiles/.zshrc           ~/.zshrc
+ln -s ../dotfiles/.config/nvim ~/.config/nvim
 ln -s ../dotfiles/.claude/settings.json ~/.claude/settings.json
 ```
 
-Check that all five resolve into the repo:
+Check that everything resolves into the repo:
 
 ```sh
 readlink -f ~/.config/nvim ~/.config/tmux ~/.tmux.conf ~/.zshrc ~/.claude/settings.json
-```
-
-### Shell
-
-`.zshrc` expects oh-my-zsh plus two custom plugins that oh-my-zsh does not
-bundle. Without them zsh prints an error on every start:
-
-```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
-git clone https://github.com/zsh-users/zsh-autosuggestions \
-  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting \
-  ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-chsh -s "$(command -v zsh)"
-```
-
-`--keep-zshrc` matters: without it the installer replaces the symlink with its
-own template and your edits stop reaching the repo.
-
-### tmux
-
-```sh
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux new -s main          # then press prefix + I, where prefix is Ctrl-s
 ```
 
 ---
