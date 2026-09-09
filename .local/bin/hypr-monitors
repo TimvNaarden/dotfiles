@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+# Manage Hyprland monitor layout profiles.
+#
+# Hyprland is configured in Lua here, and `hyprctl keyword` does not work with
+# the Lua parser, so everything below goes through `hyprctl repl` into
+# ~/.config/hypr/lib/monitors.lua.
+
+set -euo pipefail
+
+PROFILES="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/monitor-profiles.lua"
+
+lua() {
+	hyprctl repl "local m = require('lib.monitors') $1"
+}
+
+usage() {
+	cat <<'EOF'
+hypr-monitors - remember a monitor layout per set of connected displays
+
+  hypr-monitors gui       open wdisplays, drag the screens, then hit Apply
+  hypr-monitors save      remember the current arrangement for this combination
+  hypr-monitors apply     re-apply the remembered arrangement
+  hypr-monitors workspaces  hand out 3 workspaces per connected display
+  hypr-monitors status    show what is connected and whether it is remembered
+  hypr-monitors list      list every remembered combination
+  hypr-monitors forget    drop the profile for the current combination
+  hypr-monitors edit      open the profile file in $EDITOR
+
+Typical use: plug the monitors in, `hypr-monitors gui`, drag them where they
+physically are, Apply, then `hypr-monitors save`. From then on that layout comes
+back on its own whenever those displays are connected.
+
+Workspaces are handed out automatically on startup, on hotplug and after a
+wdisplays change, so `workspaces` is only needed if something looks off.
+EOF
+}
+
+case "${1:-help}" in
+gui)
+	if ! command -v wdisplays >/dev/null; then
+		echo "wdisplays is not installed. Install it with: sudo pacman -S wdisplays" >&2
+		exit 1
+	fi
+	exec wdisplays
+	;;
+save)
+	lua 'return m.save()'
+	;;
+apply)
+	lua 'return m.apply()'
+	;;
+workspaces | ws)
+	lua 'return m.assign_workspaces()'
+	;;
+status)
+	lua 'return m.status()'
+	;;
+list)
+	if [[ ! -f $PROFILES ]]; then
+		echo "no profiles saved yet ($PROFILES does not exist)"
+		exit 0
+	fi
+	grep -oP '^\t\["\K[^"]+' "$PROFILES" | nl -w2 -s') '
+	;;
+forget)
+	lua 'return m.forget()'
+	;;
+edit)
+	exec "${EDITOR:-nano}" "$PROFILES"
+	;;
+help | -h | --help)
+	usage
+	;;
+*)
+	echo "unknown command: $1" >&2
+	echo >&2
+	usage >&2
+	exit 1
+	;;
+esac

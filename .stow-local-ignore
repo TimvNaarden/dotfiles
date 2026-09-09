@@ -10,5 +10,5 @@
 \#.*\#
 
 # Repo-only, not configuration to be linked into $HOME.
-^/INSTALL\.md$
+^/INSTALL.*\.md$
 ^/packages$

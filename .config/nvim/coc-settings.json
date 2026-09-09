@@ -59,6 +59,17 @@
   "docker.enable": true,
   "prisma.enable": true,
   "languageserver": {
+    "haskell": {
+      "command": "/home/tim/.local/share/nvim/mason/bin/haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "filetypes": ["haskell", "lhaskell"],
+      "rootPatterns": ["*.cabal", "cabal.project", "stack.yaml", "package.yaml", "hie.yaml"],
+      "settings": {
+        "haskell": {
+          "formattingProvider": "ormolu"
+        }
+      }
+    },
     "arduino": {
       "command": "arduino-language-server",
       "args": [

@@ -13,6 +13,7 @@ return {
         "bash",
         "markdown",
         "markdown_inline",
+        "haskell",
       },
     },
   },

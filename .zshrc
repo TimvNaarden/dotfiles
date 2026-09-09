@@ -25,3 +25,5 @@ export NVM_DIR="$HOME/.nvm"
 # real newline instead of accepting the line - self-insert-unmeta strips the
 # meta bit and converts the ^M to ^J.
 bindkey '^[^M' self-insert-unmeta
+
+[ -f "/home/tim/.ghcup/env" ] && . "/home/tim/.ghcup/env" # ghcup-env

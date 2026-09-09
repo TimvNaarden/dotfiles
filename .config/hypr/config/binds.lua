@@ -27,19 +27,17 @@ hl.bind(mainMod .. " + SHIFT + Up", hl.dsp.window.move({ direction = "u" }))
 hl.bind(mainMod .. " + SHIFT + Right", hl.dsp.window.move({ direction = "r" }))
 hl.bind(mainMod .. " + SHIFT + Left", hl.dsp.window.move({ direction = "l" }))
 hl.bind(mainMod .. " + SHIFT + Down", hl.dsp.window.move({ direction = "d" }))
-hl.bind(mainMod .. " + SHIFT + 1", hl.dsp.window.move({ workspace = 1 }))
-hl.bind(mainMod .. " + SHIFT + 2", hl.dsp.window.move({ workspace = 2 }))
-hl.bind(mainMod .. " + SHIFT + 3", hl.dsp.window.move({ workspace = 3 }))
+-- "m~N" is the Nth workspace of the monitor in question, so these binds mean
+-- the same thing on every screen no matter how many are plugged in.
+for i = 1, NUM_WPM do
+	hl.bind(mainMod .. " + SHIFT + " .. (i % 10), hl.dsp.window.move({ workspace = "m~" .. i }))
+end
 hl.bind(mainMod .. " + SHIFT + mouse_up", hl.dsp.window.move({ monitor = "-1" }))
 hl.bind(mainMod .. " + SHIFT + mouse_down", hl.dsp.window.move({ monitor = "+1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + Right", hl.dsp.window.move({ workspace = "m+1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + Left", hl.dsp.window.move({ workspace = "m-1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + mouse_up", hl.dsp.window.move({ workspace = "m-1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + mouse_down", hl.dsp.window.move({ workspace = "m+1" }))
-for i = 1, NUM_WPM do
-	local key = i % 10
-	hl.bind(mainMod .. " + CONTROL + " .. key, hl.dsp.window.move({ workspace = "m~" .. i }))
-end
 
 -- Move & Resize with mouse
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
@@ -121,6 +119,9 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-fullscree
 -- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
 
+-- Display arrangement: drag the screens, Apply, then `hypr-monitors save`
+hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd(launchPrefix .. DISPLAY_SETTINGS))
+
 -- Clipboard
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard"))
 
@@ -131,10 +132,26 @@ hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-cen
 ---- WORKSPACES & MONITORS ----
 -------------------------------
 
--- Focus on monitors
-hl.bind(mainMod .. " + CONTROL + 1", hl.dsp.focus({ monitor = MONITOR1 }))
-hl.bind(mainMod .. " + CONTROL + 2", hl.dsp.focus({ monitor = MONITOR2 }))
-hl.bind(mainMod .. " + CONTROL + 3", hl.dsp.focus({ monitor = MONITOR3 }))
+-- Focus a monitor, and throw the active window at a monitor, by position:
+-- 1 is the built-in panel, then externals left to right. Resolved when the key
+-- is pressed rather than baked in at config load, so these keep working at a
+-- desk with different screens instead of pointing at absent monitors.
+local monitors = require("lib.monitors")
+for i = 1, MONITOR_BINDS do
+	local key = i % 10
+	hl.bind(mainMod .. " + CONTROL + " .. key, function()
+		local mon = monitors.monitor_order()[i]
+		if mon then
+			hl.dispatch(hl.dsp.focus({ monitor = mon.name }))
+		end
+	end)
+	hl.bind(mainMod .. " + CONTROL + SHIFT + " .. key, function()
+		local mon = monitors.monitor_order()[i]
+		if mon then
+			hl.dispatch(hl.dsp.window.move({ monitor = mon.name }))
+		end
+	end)
+end
 
 -- Focus on workspace number
 -- Absolute

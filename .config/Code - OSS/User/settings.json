@@ -21,9 +21,11 @@
     ".next",
     ".react-router",
     ".pnpm-store",
-    "public"
+    "public",
   ],
   "git.autoRepositoryDetection": true,
   // Show every detected repository at once instead of only the active one.
-  "scm.alwaysShowRepositories": true
+  "scm.alwaysShowRepositories": true,
+  "workbench.editor.enablePreview": false,
+  "git.confirmSync": false,
 }

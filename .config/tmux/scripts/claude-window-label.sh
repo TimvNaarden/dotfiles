@@ -24,9 +24,9 @@ window_count="${3:-1}"
 [[ "$window_count" =~ ^[0-9]+$ ]] && [ "$window_count" -gt 0 ] || window_count=1
 
 # Catppuccin Mocha.
-CRUST="#11111b"; SURFACE0="#313244"; SURFACE1="#45475a"
-TEXT="#cdd6f4"; SUBTEXT="#a6adc8"; OVERLAY="#6c7086"
-GREEN="#a6e3a1"; YELLOW="#f9e2af"; BLUE="#89b4fa"
+CRUST="#11111b"; SURFACE1="#45475a"; SURFACE2="#585b70"
+TEXT="#cdd6f4"; SUBTEXT="#a6adc8"; OVERLAY="#6c7086"; OVERLAY2="#9399b2"
+GREEN="#a6e3a1"; YELLOW="#f9e2af"; BLUE="#89b4fa"; LAVENDER="#b4befe"
 
 panes=$(tmux list-panes -t "$win" -F \
   '#{window_active}|#{window_index}|#{window_flags}|#{@claude_state}|#{pane_current_command}|#{pane_current_path}|#{pane_title}' \
@@ -55,12 +55,20 @@ while IFS='|' read -r w_active w_index w_flags state command path pane_title; do
     [ -n "$fallback" ] || fallback="$command"
 done <<< "$panes"
 
-# Blocked on a human outranks finished, which outranks still working.
+# Blocked on a human outranks finished, which outranks still working. State
+# colours are identical on active and inactive tabs on purpose: an alert on a
+# background window is exactly the one you must not miss. Only the neutral
+# no-state badge dims, because there it is free to carry the active cue instead.
 if   [ -n "$has_input" ];   then accent="$YELLOW"
 elif [ -n "$has_done" ];    then accent="$GREEN"
 elif [ -n "$has_running" ]; then accent="$BLUE"
-else accent="$OVERLAY"
+elif [ "$active" = "1" ];   then accent="$OVERLAY2"
+else accent="$SURFACE1"
 fi
+
+# The "· branch" suffix is secondary to the title, so it sits one step below
+# whatever the tab's own text tone is rather than at a fixed grey.
+if [ "$active" = "1" ]; then suffix_fg="$SUBTEXT"; else suffix_fg="$SURFACE2"; fi
 
 # Roughly what status-right occupies, plus the per-tab index badge and padding.
 RESERVED=48
@@ -120,7 +128,7 @@ if [ -n "$branch" ] && [ "$shared" -le 1 ]; then
     label=$(trim "$branch" "$budget")
     spare=$(( budget - ${#label} - 3 ))
     if [ -n "$title" ] && [ "$spare" -ge 8 ]; then
-        label="$label #[fg=$OVERLAY]· $(trim "$title" "$spare")"
+        label="$label #[fg=$suffix_fg]· $(trim "$title" "$spare")"
     fi
 elif [ -n "$title" ]; then
     # Shared or absent branch: the task title is the only thing that separates
@@ -128,7 +136,7 @@ elif [ -n "$title" ]; then
     label=$(trim "$title" "$budget")
     spare=$(( budget - ${#label} - 3 ))
     if [ -n "$branch" ] && [ "$spare" -ge 8 ]; then
-        label="$label #[fg=$OVERLAY]· $(trim "$branch" "$spare")"
+        label="$label #[fg=$suffix_fg]· $(trim "$branch" "$spare")"
     fi
 elif [ -n "$branch" ]; then
     label=$(trim "$branch" "$budget")
@@ -137,14 +145,20 @@ else
 fi
 
 if [ "$active" = "1" ]; then
-    label_bg="$SURFACE1"; label_fg="$TEXT"
+    label_bg="$SURFACE2"; label_fg="$TEXT"; weight="bold"
+    # us= sets the underline colour independently of the text colour.
+    rule=",underscore,us=$LAVENDER"
 else
-    label_bg="$SURFACE0"; label_fg="$SUBTEXT"
+    # No fill at all, so inactive tabs melt into the status bar and leave the
+    # single filled tab obvious. Dropping their brightness matters as much as
+    # raising the active one: five near-equal neighbours are what buried it.
+    label_bg="default"; label_fg="$OVERLAY"; weight="nobold"
+    rule=""
 fi
 
 marker=""
 case "$flags" in *Z*) marker=" ";; esac
 case "$flags" in *!*) marker="$marker ";; esac
 
-printf '#[fg=%s,bg=default]#[fg=%s,bg=%s,bold] %s #[fg=%s,bg=%s,nobold] %s%s #[fg=%s,bg=default,none]' \
-    "$accent" "$CRUST" "$accent" "$index" "$label_fg" "$label_bg" "$label" "$marker" "$label_bg"
+printf '#[fg=%s,bg=%s,bold%s] %s #[fg=%s,bg=%s,%s%s] %s%s #[fg=default,bg=default,nobold,nounderscore]' \
+    "$CRUST" "$accent" "$rule" "$index" "$label_fg" "$label_bg" "$weight" "$rule" "$label" "$marker"

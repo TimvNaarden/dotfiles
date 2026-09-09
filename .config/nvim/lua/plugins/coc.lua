@@ -6,6 +6,18 @@ return {
     lazy = false,
     priority = 1000,
     init = function()
+      -- Mason prepends its bin dir to $PATH in its own config, but that runs on
+      -- VeryLazy, long after coc has already spawned its node process. Servers
+      -- coc starts inherit that stale env, so mason-installed binaries are
+      -- invisible to them. haskell-language-server-wrapper fails outright this
+      -- way: it re-resolves "haskell-language-server-<ghc version>" off $PATH
+      -- and dies with "Failed to find a HLS version for GHC 9.10.3". Prepend it
+      -- here instead, where it lands before coc loads.
+      local mason_bin = vim.fn.stdpath "data" .. "/mason/bin"
+      if vim.fn.isdirectory(mason_bin) == 1 and not vim.env.PATH:find(mason_bin, 1, true) then
+        vim.env.PATH = mason_bin .. ":" .. vim.env.PATH
+      end
+
       -- node is installed through nvm, so it is only on $PATH inside a login
       -- shell. Launched from a desktop entry, coc would fail to start. Pin the
       -- newest nvm node when nothing is on $PATH.
