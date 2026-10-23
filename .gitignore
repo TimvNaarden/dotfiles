@@ -4,3 +4,6 @@ nextcloud-local.pem
 # tracked as gitlinks with no .gitmodules, so a fresh clone produced empty
 # directories and the plugin silently never loaded. See INSTALL.md.
 .tmux/plugins/
+
+# Its own private repo, see INSTALL.md
+/jojoschool/

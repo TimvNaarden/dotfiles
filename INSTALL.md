@@ -33,6 +33,21 @@ display server to use it.
 
 `INSTALL*.md` and `packages/` are excluded from linking by `.stow-local-ignore`.
 
+## JoJoschool
+
+Work config (the `jojo-*` commands, the monorepo aliases, personal Claude Code
+skills about the JoJoschool codebase) lives in `jojoschool/`, which is its own
+**private** repo. This repo gitignores it and `.stow-local-ignore` keeps the
+root package from linking it as `~/jojoschool`. Clone it there and stow it as
+a second package:
+
+```sh
+stow -d ~/dotfiles -t ~ jojoschool
+```
+
+`.zshrc` sources `~/.zshrc.jojoschool` only when it exists, so a machine
+without the private repo still gets a working shell.
+
 ## Branches
 
 `Cachy-os` is the desktop machine. Keep machine-specific edits on their own

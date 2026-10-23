@@ -27,3 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 bindkey '^[^M' self-insert-unmeta
 
 [ -f "/home/tim/.ghcup/env" ] && . "/home/tim/.ghcup/env" # ghcup-env
+# JoJoschool config, a private repo at ~/dotfiles/jojoschool
+[ -f "$HOME/.zshrc.jojoschool" ] && source "$HOME/.zshrc.jojoschool"
+# Machine-local config, not tracked in dotfiles
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"

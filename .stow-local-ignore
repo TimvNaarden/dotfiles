@@ -12,3 +12,6 @@
 # Repo-only, not configuration to be linked into $HOME.
 ^/INSTALL.*\.md$
 ^/packages$
+
+# Its own stow package, stowed separately. See INSTALL.md.
+^/jojoschool$
