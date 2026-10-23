@@ -4,10 +4,6 @@ The full desktop: Hyprland, kitty, zsh, tmux, Neovim. Everything here was
 verified against the machine this repo was last committed from: CachyOS (Arch),
 Hyprland 0.56.2, Neovim 0.12.5.
 
-For Neovim on Debian under WSL2, where there is no display server and the flat
-stow layout needs handling differently, see
-[INSTALL-debian-wsl.md](INSTALL-debian-wsl.md).
-
 Work top to bottom. Each step says how to check it worked.
 
 ---
@@ -52,8 +48,8 @@ sudo pacman -S --needed zsh fd nodejs stow git curl unzip ripgrep \
 provides `glslangValidator`, which the GLSL plugin shells out to; skip it if you
 do not write shaders.
 
-AUR packages are in `packages/pacman-aur.txt`. Currently just `google-chrome`,
-which needs an AUR helper such as `paru` or `yay`.
+AUR packages are in `packages/pacman-aur.txt` (`pacman -Qqem`) and need an
+AUR helper such as `paru` or `yay`.
 
 Check:
 
