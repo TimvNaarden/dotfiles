@@ -1,6 +1,10 @@
 {
   "workbench.colorTheme": "Catppuccin Mocha",
 
+  // The us intl layout makes ` a dead key, so Ctrl+` (toggle terminal) never fired.
+  // Physical key codes ignore the layout's dead keys.
+  "keyboard.dispatch": "keyCode",
+
   // Claude Code puts its worktrees in `<repo>/.claude/worktrees/<name>`, which
   // is 3 levels deep (4 when the name contains a slash, e.g. `fix/some-thing`).
   // The git extension only scans 1 level by default, so they never showed up in
@@ -28,4 +32,16 @@
   "scm.alwaysShowRepositories": true,
   "workbench.editor.enablePreview": false,
   "git.confirmSync": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDelete": false,
+  // Roslyn instead of OmniSharp, OmniSharp 1.39 crashes on .slnx solutions
+  "dotnet.server.useOmnisharp": false,
+  // Prettier can't format C#
+  "[csharp]": {
+    "editor.defaultFormatter": "muhammad-sammy.csharp",
+  },
 }

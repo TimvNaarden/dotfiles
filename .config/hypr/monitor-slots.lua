@@ -8,6 +8,8 @@ return {
 	["desc:BOE 0x094A"] = 1,
 	["desc:Dell Inc. DELL U2715H GH85D5310BML"] = 4,
 	["desc:Dell Inc. DELL U2715H GH85D5350E7L"] = 3,
+	["desc:Philips Consumer Electronics Company PHL24E1N1100A UHB2434046855"] = 3,
+	["desc:Philips Consumer Electronics Company PHL24E1N1100A UHB2434047074"] = 2,
 	["desc:Philips Consumer Electronics Company PHL24E1N1100A UHB2438030843"] = 2,
 	["desc:Philips Consumer Electronics Company PHL24E1N1100A UHB2438031078"] = 3,
 }

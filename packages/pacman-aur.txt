@@ -1,1 +1,4 @@
+figma-linux
 google-chrome
+neofetch
+openoffice-bin

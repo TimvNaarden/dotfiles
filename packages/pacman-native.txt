@@ -39,6 +39,7 @@ cachyos-zsh-config
 cantarell-fonts
 chwd
 claude-code
+claude-desktop
 code
 cpupower
 cryptsetup
@@ -54,6 +55,8 @@ docker
 docker-compose
 dolphin
 dosfstools
+dotnet-runtime
+dotnet-sdk
 duf
 e2fsprogs
 efibootmgr
@@ -74,6 +77,7 @@ foomatic-db-nonfree
 foomatic-db-nonfree-ppds
 foomatic-db-ppds
 fsarchiver
+ghc
 ghostscript
 git
 github-cli
@@ -201,10 +205,12 @@ unzip
 upower
 usb_modeswitch
 usbutils
+uv
 vim
 vlc-plugins-all
 vulkan-icd-loader
 vulkan-radeon
+wdisplays
 wget
 which
 wireplumber
@@ -215,4 +221,5 @@ xfsprogs
 xl2tpd
 yarn
 yay
+zotero
 zoxide

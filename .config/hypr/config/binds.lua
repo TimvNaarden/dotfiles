@@ -128,6 +128,11 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard")
 -- Notifications
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
 
+-- Notes & tasks. Both panels are plugins, and an "attached" panel like the
+-- todo one only answers to panel-toggle, never panel-open.
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle noctalia/notes:panel"))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle nightwatch75/todo:panel"))
+
 -------------------------------
 ---- WORKSPACES & MONITORS ----
 -------------------------------

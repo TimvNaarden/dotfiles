@@ -1,5 +1,5 @@
 {
-  "model": "opus[1m]",
+  "model": "opus",
   "hooks": {
     "SessionStart": [
       {
@@ -7,6 +7,14 @@
           {
             "type": "command",
             "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" idle"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-branch.py\""
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-label.py\""
           }
         ]
       }
@@ -17,6 +25,14 @@
           {
             "type": "command",
             "command": "\"$HOME/.config/tmux/scripts/claude-pane-state.sh\" running"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-branch.py\""
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-label.py\""
           },
           {
             "type": "command",
@@ -49,6 +65,14 @@
           {
             "type": "command",
             "command": "\"$HOME/.config/tmux/scripts/claude-notify.py\" done"
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-branch.py\""
+          },
+          {
+            "type": "command",
+            "command": "\"$HOME/.config/tmux/scripts/claude-pane-label.py\""
           }
         ]
       }
@@ -65,7 +89,13 @@
     ]
   },
   "enabledPlugins": {
-    "frontend-design@claude-plugins-official": true
+    "frontend-design@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
   },
   "theme": "custom:loud-you",
   "preferredNotifChannel": "notifications_disabled",
@@ -97,5 +127,6 @@
       "**Trusted repo**: /home/tim/Documents/Haskall (no remotes configured; local working directory only)",
       "**Org-specific CLIs**: None configured"
     ]
-  }
+  },
+  "cleanupPeriodDays": 3650
 }

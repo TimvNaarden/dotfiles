@@ -1,0 +1,68 @@
+{
+  "title": "Deskpad",
+  "notes": {
+    "title": "Notes",
+    "no_notes": "No notes yet — click to open the Notes panel",
+    "empty": "This note is empty",
+    "unreadable": "Cannot read {file}"
+  },
+  "todo": {
+    "title": "To Do",
+    "empty": "Nothing to do — click the header to add a task",
+    "more": {
+      "one": "+{count} more",
+      "other": "+{count} more"
+    }
+  },
+  "settings": {
+    "notes_dir": {
+      "label": "Notes folder",
+      "description": "Folder the Notes widget reads. Point it at the same folder as the noctalia/notes plugin."
+    },
+    "extension": {
+      "label": "Note extension",
+      "description": "File extension of a note, without the dot."
+    },
+    "todo_folder": {
+      "label": "To Do folder",
+      "description": "Folder holding todo.json. Point it at the same folder as the nightwatch75/todo plugin."
+    },
+    "note_file": {
+      "label": "Note",
+      "description": "File name of the note to show. Leave empty to follow the most recently edited note."
+    },
+    "card_width": {
+      "label": "Card width",
+      "description": "Width of the card in pixels."
+    },
+    "max_lines": {
+      "label": "Maximum lines",
+      "description": "Lines of the note shown before the card truncates."
+    },
+    "font_size": {
+      "label": "Font size"
+    },
+    "render_markdown": {
+      "label": "Render markdown",
+      "description": "Off shows the raw text instead of formatted markdown."
+    },
+    "show_title": {
+      "label": "Show title"
+    },
+    "background_opacity": {
+      "label": "Background opacity",
+      "description": "Opacity of the card behind the content, 0 to 100."
+    },
+    "max_items": {
+      "label": "Maximum tasks",
+      "description": "Tasks shown before the card summarises the rest."
+    },
+    "show_done": {
+      "label": "Show completed",
+      "description": "Also list tasks that are already done."
+    },
+    "show_header": {
+      "label": "Show header"
+    }
+  }
+}

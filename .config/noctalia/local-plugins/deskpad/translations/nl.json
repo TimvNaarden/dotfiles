@@ -1,0 +1,68 @@
+{
+  "title": "Deskpad",
+  "notes": {
+    "title": "Notities",
+    "no_notes": "Nog geen notities — klik om het notitiepaneel te openen",
+    "empty": "Deze notitie is leeg",
+    "unreadable": "Kan {file} niet lezen"
+  },
+  "todo": {
+    "title": "Te doen",
+    "empty": "Niets te doen — klik op de kop om een taak toe te voegen",
+    "more": {
+      "one": "+{count} meer",
+      "other": "+{count} meer"
+    }
+  },
+  "settings": {
+    "notes_dir": {
+      "label": "Notitiemap",
+      "description": "Map die de notitiewidget leest. Zet deze op dezelfde map als de noctalia/notes-plugin."
+    },
+    "extension": {
+      "label": "Notitie-extensie",
+      "description": "Bestandsextensie van een notitie, zonder punt."
+    },
+    "todo_folder": {
+      "label": "Takenmap",
+      "description": "Map met todo.json. Zet deze op dezelfde map als de nightwatch75/todo-plugin."
+    },
+    "note_file": {
+      "label": "Notitie",
+      "description": "Bestandsnaam van de notitie die getoond wordt. Leeg laten volgt de laatst bewerkte notitie."
+    },
+    "card_width": {
+      "label": "Kaartbreedte",
+      "description": "Breedte van de kaart in pixels."
+    },
+    "max_lines": {
+      "label": "Maximum regels",
+      "description": "Aantal regels van de notitie voordat de kaart afkapt."
+    },
+    "font_size": {
+      "label": "Tekstgrootte"
+    },
+    "render_markdown": {
+      "label": "Markdown weergeven",
+      "description": "Uit toont de ruwe tekst in plaats van opgemaakte markdown."
+    },
+    "show_title": {
+      "label": "Titel tonen"
+    },
+    "background_opacity": {
+      "label": "Achtergronddekking",
+      "description": "Dekking van de kaart achter de inhoud, 0 tot 100."
+    },
+    "max_items": {
+      "label": "Maximum taken",
+      "description": "Aantal taken dat getoond wordt voordat de kaart de rest samenvat."
+    },
+    "show_done": {
+      "label": "Afgeronde tonen",
+      "description": "Toon ook taken die al klaar zijn."
+    },
+    "show_header": {
+      "label": "Kop tonen"
+    }
+  }
+}

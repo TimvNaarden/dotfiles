@@ -1,0 +1,149 @@
+id          = "tim/deskpad"
+name        = "Deskpad"
+version     = "1.0.0"
+# 28: the widget rows use render-scoped closures (9) and the manifest carries
+# entry-level [[desktop_widget.setting]] blocks. Nothing here needs 29+.
+plugin_api  = 28
+author      = "tim"
+license     = "MIT"
+icon        = "checklist"
+description = "Desktop widgets for the Notes folder and the To Do list, reading the same files as the noctalia/notes and nightwatch75/todo plugins."
+tags        = ["desktop", "productivity"]
+dependencies = []
+
+# Plugin-level settings: both widgets read files that other plugins own, so the
+# paths are configured once here rather than per widget instance.
+[[setting]]
+key             = "notes_dir"
+type            = "folder"
+label_key       = "settings.notes_dir.label"
+description_key = "settings.notes_dir.description"
+default         = "~/Documents/Notes"
+
+[[setting]]
+key             = "extension"
+type            = "string"
+label_key       = "settings.extension.label"
+description_key = "settings.extension.description"
+default         = "md"
+
+[[setting]]
+key             = "todo_folder"
+type            = "folder"
+label_key       = "settings.todo_folder.label"
+description_key = "settings.todo_folder.description"
+default         = "~/Documents/Todo"
+
+# ── Notes ────────────────────────────────────────────────────────────────────
+# One note per instance. Add a second widget to pin a second note.
+[[desktop_widget]]
+id    = "notes"
+entry = "notes.luau"
+
+  [[desktop_widget.setting]]
+  key             = "note_file"
+  type            = "string"
+  label_key       = "settings.note_file.label"
+  description_key = "settings.note_file.description"
+  default         = ""
+
+  [[desktop_widget.setting]]
+  key             = "card_width"
+  type            = "int"
+  label_key       = "settings.card_width.label"
+  description_key = "settings.card_width.description"
+  default         = 360
+  min             = 160
+  max             = 900
+
+  [[desktop_widget.setting]]
+  key             = "max_lines"
+  type            = "int"
+  label_key       = "settings.max_lines.label"
+  description_key = "settings.max_lines.description"
+  default         = 12
+  min             = 1
+  max             = 60
+
+  [[desktop_widget.setting]]
+  key             = "font_size"
+  type            = "int"
+  label_key       = "settings.font_size.label"
+  default         = 13
+  min             = 8
+  max             = 32
+
+  [[desktop_widget.setting]]
+  key             = "render_markdown"
+  type            = "bool"
+  label_key       = "settings.render_markdown.label"
+  description_key = "settings.render_markdown.description"
+  default         = true
+
+  [[desktop_widget.setting]]
+  key             = "show_title"
+  type            = "bool"
+  label_key       = "settings.show_title.label"
+  default         = true
+
+  [[desktop_widget.setting]]
+  key             = "background_opacity"
+  type            = "int"
+  label_key       = "settings.background_opacity.label"
+  description_key = "settings.background_opacity.description"
+  default         = 70
+  min             = 0
+  max             = 100
+
+# ── To Do ────────────────────────────────────────────────────────────────────
+[[desktop_widget]]
+id    = "todo"
+entry = "todo.luau"
+
+  [[desktop_widget.setting]]
+  key             = "card_width"
+  type            = "int"
+  label_key       = "settings.card_width.label"
+  description_key = "settings.card_width.description"
+  default         = 320
+  min             = 160
+  max             = 900
+
+  [[desktop_widget.setting]]
+  key             = "max_items"
+  type            = "int"
+  label_key       = "settings.max_items.label"
+  description_key = "settings.max_items.description"
+  default         = 8
+  min             = 1
+  max             = 40
+
+  [[desktop_widget.setting]]
+  key             = "font_size"
+  type            = "int"
+  label_key       = "settings.font_size.label"
+  default         = 13
+  min             = 8
+  max             = 32
+
+  [[desktop_widget.setting]]
+  key             = "show_done"
+  type            = "bool"
+  label_key       = "settings.show_done.label"
+  description_key = "settings.show_done.description"
+  default         = false
+
+  [[desktop_widget.setting]]
+  key             = "show_header"
+  type            = "bool"
+  label_key       = "settings.show_header.label"
+  default         = true
+
+  [[desktop_widget.setting]]
+  key             = "background_opacity"
+  type            = "int"
+  label_key       = "settings.background_opacity.label"
+  description_key = "settings.background_opacity.description"
+  default         = 70
+  min             = 0
+  max             = 100
